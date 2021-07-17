@@ -1,0 +1,115 @@
+/* PersonalProject */
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap");
+
+
+
+/* Link Tag */
+
+/* Logo */
+.navBar {
+  background-color: #abe3f3;
+  position: absolute;
+  width: 100%;
+  height: 60px;
+}
+
+.navBar .navContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.navBar .Logo {
+  height: 60px;
+}
+
+.navBar .H-Logo {
+  display: inline-block;
+}
+
+.navBar .H-Logo img {
+  margin-bottom: 55px;
+  height: 40px;
+}
+
+.navBar .text-logo {
+  margin-top: -45px;
+  margin-left: -30px;
+  display: inline-block;
+}
+
+.navBar .text-logo img {
+  height: 150px;
+}
+
+/* nav Bar content */
+.navBar .nav-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  /* background-color: #2b91c5; */
+}
+
+.navBar .nav-content ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navBar li {
+  display: inline-block;
+  height: 100%;
+}
+
+.navBar li a {
+  padding: 11px 20px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 30px;
+  color: #43c466;
+}
+
+.navBar ul li:last-child {
+  margin-right: 10px;
+}
+
+.navBar li a:hover {
+  background-color: #688ce9;
+}
+
+/* Login Status */
+.navBar .login-status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  height: 40px;
+  width: 200px;
+  text-align: right;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  background-color: #fff6dd;
+}
+
+.navBar .login-status p {
+  display: inline-block;
+}
+
+.navBar .userstatus-icon {
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 6px;
+}
+
+.navBar .userstatus-icon img {
+  display: inline-block;
+  height: 30px;
+}
