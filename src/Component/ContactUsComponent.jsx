@@ -34,7 +34,7 @@ function ContactUsComponent() {
               <br />
               <input type="text" id="lastname" name="lastname" />
               <br />
-              <input type="text" id="email" name="email" />
+              <input type="email" id="email" name="email" />
               <br />
               <textarea
                 id="aditional"

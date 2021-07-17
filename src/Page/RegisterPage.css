@@ -84,11 +84,11 @@
 }
 
 .registerPage input[type="submit"] {
-    margin-top: 35px;
+  margin-top: 35px;
   width: 600px;
   height: 50px;
   background: #2b90c4;
-  border-radius: 15px;
+  border-radius: 10px;
   font-weight: 600;
   font-size: 20px;
   color: #ffffff;
@@ -105,13 +105,13 @@
 }
 
 .registerPage .form-register p a {
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 18px;
-    color: #2B90C4;
-    margin-left: 15px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  color: #2b90c4;
+  margin-left: 15px;
 }
 
 .registerPage .form-register p a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
