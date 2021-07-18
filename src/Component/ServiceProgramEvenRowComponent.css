@@ -2,10 +2,10 @@
     /* border: 1px dashed black; */
     display: flex;
     width: 100%;
-    height: 856px;
+    height: 44.58333vw;
     background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 4px 4px 10px 3px gray;
+    border-radius: 0.52083vw;
+    box-shadow: 0.20833333vw 0.20833333vw 0.52083vw 0.15625vw gray;
   }
   
   .service-cardEven .content-in-servicecardEven {
@@ -15,39 +15,39 @@
   
   .service-cardEven .text-content-in-servicecardEven {
     /* border: 1px dashed black; */
-    margin-top: 270px;
-    margin-left: 73px;
-    padding-right: 20px;
+    margin-top: 14.0625vw;
+    margin-left: 3.802083vw;
+    padding-right: 1.0417vw;
   }
   
   .service-cardEven .text-content-in-servicecardEven h1 {
     font-weight: 600;
-    font-size: 50px;
+    font-size: 2.604167vw;
     color: #000000;
   }
   
   .service-cardEven .text-content-in-servicecardEven p {
-    font-size: 40px;
+    font-size: 2.0833333vw;
     color: #000000;
   }
   
   .service-cardEven .text-content-in-servicecardEven button {
-    width: 213px;
-    height: 56px;
+    width: 11.09375vw;
+    height: 2.9167vw;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 1.0417vw;
     color: #ffffff;
     background: #2b90c4;
-    border-radius: 10px;
-    margin-top: 30px;
+    border-radius: 0.52083vw;
+    margin-top: 1.5625vw;
   }
   
   .service-cardEven .price-in-service-cardEven {
     font-weight: 600;
-    font-size: 30px;
+    font-size: 1.5625vw;
     color: #000000;
-    margin-top: 190px;
-    margin-left: 410px;
+    margin-top: 9.895833vw;
+    margin-left: 21.3541666vw;
   }
   
   .service-cardEven .img-in-servicecardEven {
@@ -55,6 +55,6 @@
     height: 100%;
     width: 50%;
     background-size: cover;
-    border-radius: 10px 0 0 10px;
+    border-radius: 0.52083vw 0 0 0.52083vw;
   }
   

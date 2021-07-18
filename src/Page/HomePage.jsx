@@ -10,7 +10,7 @@ function HomePage() {
   return (
     <div>
       <NavComponent />
-      <div style={{ paddingTop: "60px", with: "100%" }}></div>
+      <div style={{ paddingTop: "3.125vw", with: "100%" }}></div>
       <div className="homepage-body">
         <section className="promotion">
           <div className="container">
@@ -78,14 +78,12 @@ function HomePage() {
         <section className="contact-us">
           <div className="container">
             <div className="horizental-line"></div>
-            <div className="contact-us-content">
             <ContactUsComponent />
-            </div>
           </div>
         </section>
       </div>
       {/* Space Bottom */}
-      <div style={{ marginBottom: "40px" }}></div>
+      <div style={{ marginBottom: "2.083333333333333vw" }}></div>
         <FooterComponent />
     </div>
   );

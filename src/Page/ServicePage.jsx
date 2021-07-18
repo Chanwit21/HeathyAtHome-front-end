@@ -9,7 +9,7 @@ function ServicePage() {
   return (
     <div>
       <NavComponent />
-      <div style={{ paddingTop: "60px", with: "100%" }}></div>
+      <div style={{ paddingTop: "3.125vw", with: "100%" }}></div>
       <div className="service-page">
         <section className="service-program">
           <div className="container">
@@ -78,7 +78,7 @@ function ServicePage() {
           </div>
         </section>
       </div>
-      <div style={{ marginBottom: "40px", width: "100%" }}></div>
+      <div style={{ marginBottom: "2.083333333333333vw" }}></div>
       <FooterComponent />
     </div>
   );

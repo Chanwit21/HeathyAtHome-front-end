@@ -1,34 +1,34 @@
 /* Contact us text */
 .contact-us-content .contact-us-text {
-  width: 550px;
+  width: 37%;
 }
 
 .contact-us-content .contact-us-text h1 {
-  width: 263px;
-  height: 113px;
+  width: 13.7vw;
+  height: 5.88vw;
   font-weight: 600;
-  font-size: 50px;
+  font-size: 2.604vw;
   color: #43c466;
-  margin-left: 40px;
+  margin-left: 2.08vw;
 }
 
 .contact-us-content .contact-us-text p {
-  margin-left: 70px;
-  width: 400px;
-  height: 65px;
+  margin-left: 3.64vw;
+  width: 20.83vw;
+  height: 3.38vw;
   font-weight: 600;
-  font-size: 30px;
+  font-size: 1.5625vw;
   color: #000000;
 }
 
 .contact-us-content .contact-us-img {
-  margin-left: 70px;
+  margin-left: 3vw;
+  margin-top: 0.5vw;
 }
 
 .contact-us-content .contact-us-text img {
-  margin-right: 13px;
-  width: 100px;
-  height: 100px;
+  margin-right: 0.68vw;
+  width: 6vw;
 }
 
 /* Contact  Us Form */
@@ -36,7 +36,7 @@
   display: flex;
   justify-content: space-between;
   /* border: 1px dashed black; */
-  margin-top: 40px;
+  margin-top: 2.083vw;
 }
 
 /* .contact-us-content .contact-us-text {
@@ -46,100 +46,118 @@
 .contact-us-form {
   /* border: 1px dashed black; */
   background: #ffffff;
-  box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
-  width: 941px;
-  height: 559px;
+  box-shadow: 0.2083vw 0.2083vw 0.52083vw 0.26vw rgba(0, 0, 0, 0.25);
+  border-radius: 0.52083vw;
+  width: 63%;
+  height: 29.114vw;
 }
 
 .contact-us-content .contact-us-form .label {
-  margin-top: 33px;
-  margin-left: 23px;
+  margin-top: 1.718vw;
+  margin-left: 3.5vw;
   display: inline-block;
   /* border: 1px dashed black; */
   font-weight: 600;
-  font-size: 28px;
+  font-size: 1.341666vw;
   text-align: right;
-  margin-right: 25px;
+  margin-right: 1.302vw;
   position: absolute;
 }
 
-.contact-us-content .contact-us-form .label label:nth-child(1) {
+.contact-us-content .contact-us-form .label label{
   display: inline-block;
-  padding-top: 9px;
+  height: 3.3vw;
+  margin-top:0.6vw;
+  margin-bottom: 1.1vw;
+}
+
+.contact-us-content .contact-us-form .label label:nth-child(5){
+  display: inline-block;
+  height: 3.3vw;
+  margin-bottom: 1vw;
+}
+
+.contact-us-content .contact-us-form .label label:nth-child(7){
+  margin-top: 0vw;
+}
+
+/* .contact-us-content .contact-us-form .label label:nth-child(1) {
+  display: inline-block;
+  padding-top: 0.48vw;
 }
 
 .contact-us-content .contact-us-form .label label:nth-child(3) {
   display: inline-block;
-  margin-top: 58px;
+  margin-top: 3.3vw;
 }
 
 .contact-us-content .contact-us-form .label label:nth-child(5) {
   display: inline-block;
-  margin-top: 61px;
+  margin-top: 3.177vw;
 }
 
 .contact-us-content .contact-us-form .label label:nth-child(7) {
   display: inline-block;
-  margin-top: 47px;
-}
+  margin-top: 2.448vw;
+} */
 
 .contact-us-content .contact-us-form .input {
   display: inline-block;
   /* border: 1px dashed black; */
   text-align: left;
-  margin-top: 32px;
-  margin-left: 280px;
+  margin-top: 1.66666667vw;
+  margin-left: 13.28333vw;
 }
 
 .contact-us-content .contact-us-form .input input {
   display: inline-block;
-  margin-bottom: 35px;
-  width: 384px;
-  height: 60px;
+  margin-bottom: 1.823vw;
+  width: 20vw;
+  height: 3.125vw;
+  /* height: 60px; */
   background: #ffffff;
-  border: 1px solid #2b90c4;
+  border: 0.000520833vw solid #2b90c4;
   box-sizing: border-box;
-  border-radius: 10px;
+  border-radius: 0.520833vw;
 }
 
 .contact-us-content .contact-us-form .input input#email {
-  width: 635px;
-  height: 60px;
+  width: 33.073vw;
+  height: 3.125vw;
 }
 
 .contact-us-content .contact-us-form .input textarea {
-  width: 635px;
-  height: 153px;
+  width: 33.073vw;
+  height: 7.96875vw;
   background: #ffffff;
-  border: 1px solid #2b90c4;
+  border: 0.000520833vw solid #2b90c4;
   box-sizing: border-box;
-  border-radius: 10px;
+  border-radius: 0.520833vw;
 }
 
 .contact-us-content input[type="submit"] {
-  margin-top: 16px;
-  margin-left: 23px;
-  width: 895px;
-  height: 50px;
+  margin-top: 0.83333vw;
+  margin-left: 3.5vw;
+  width: 43.01vw;
+  height: 2.60417vw;
   background: #2b90c4;
-  border-radius: 10px;
+  border-radius: 0.520833vw;
   box-shadow: none;
   font-weight: 600;
-  font-size: 30px;
+  font-size: 1.5625vw;
   color: #ffffff;
 }
 
 .contact-us-content .contact-us-form img:first-child {
   position: absolute;
-  margin-left: 710px;
-  margin-top: 92px;
-  width: 50px;
+  margin-left: 36.5vw;
+  margin-top: 4.79166666vw;
+  width: 2.604166vw;
 }
 
 .contact-us-content .contact-us-form img:nth-child(2) {
   position: absolute;
-  margin-left: 710px;
-  margin-top: 10px;
-  width: 211px;
+  margin-left: 36.5vw;
+  margin-top: 0.520833vw;
+  width: 10.9895vw;
 }

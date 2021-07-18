@@ -10,7 +10,7 @@
   background-color: #abe3f3;
   position: absolute;
   width: 100%;
-  height: 60px;
+  height: 3.125vw;
 }
 
 .navBar .navContainer {
@@ -21,7 +21,7 @@
 }
 
 .navBar .Logo {
-  height: 60px;
+  height: 3.125vw;
 }
 
 .navBar .H-Logo {
@@ -29,18 +29,18 @@
 }
 
 .navBar .H-Logo img {
-  margin-bottom: 55px;
-  height: 40px;
+  margin-bottom: 2.864583333vw;
+  height: 2.083vw;
 }
 
 .navBar .text-logo {
-  margin-top: -45px;
-  margin-left: -30px;
+  margin-top: -2.34375vw;
+  margin-left: -1.5625vw;
   display: inline-block;
 }
 
 .navBar .text-logo img {
-  height: 150px;
+  height: 7.8125vw;
 }
 
 /* nav Bar content */
@@ -48,7 +48,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60px;
+  height: 2.083vw;
   /* background-color: #2b91c5; */
 }
 
@@ -64,20 +64,21 @@
 .navBar li {
   display: inline-block;
   height: 100%;
+  margin-top: 1vw;
 }
 
 .navBar li a {
-  padding: 11px 20px;
+  padding: 0.5729166vw 1.041666vw;
   display: block;
   text-align: center;
   text-decoration: none;
   font-weight: 600;
-  font-size: 30px;
+  font-size: 1.5625vw;
   color: #43c466;
 }
 
 .navBar ul li:last-child {
-  margin-right: 10px;
+  margin-right: 0.5208333vw;
 }
 
 .navBar li a:hover {
@@ -89,14 +90,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 20px;
-  height: 40px;
-  width: 200px;
+  border-radius: 1.0416vw;
+  height: 2.0833vw;
+  width: 10.41667vw;
   text-align: right;
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 0.9375vw;
   background-color: #fff6dd;
+  margin-top: 1vw;
 }
 
 .navBar .login-status p {
@@ -105,11 +107,11 @@
 
 .navBar .userstatus-icon {
   display: inline-block;
-  margin-right: 10px;
-  margin-top: 6px;
+  margin-right: 0.5208333vw;
+  margin-top: 0.3125vw;
 }
 
 .navBar .userstatus-icon img {
   display: inline-block;
-  height: 30px;
+  height: 1.5625vw;
 }

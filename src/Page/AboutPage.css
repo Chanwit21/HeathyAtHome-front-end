@@ -4,29 +4,29 @@
 } */
 
 .about-page .container {
-  width: 80%;
+  width: 80vw;
   margin: 0 auto;
 }
 
 .about-page .main-text {
   width: 100%;
-  margin-top: 42px;
+  margin-top: 2.1875vw;
   text-align: center;
 }
 
 .about-page .main-text h1 {
   font-weight: 600;
-  font-size: 50px;
+  font-size: 2.604167vw;
   color: #43c466;
-  margin-bottom: 53px;
+  margin-bottom: 2.7604166vw;
 }
 
 .about-page .main-text p {
   display: inline-block;
-  width: 1150px;
+  width: 59.8958333vw;
   text-align: left;
   font-weight: normal;
-  font-size: 25px;
+  font-size: 1.302083333vw;
   color: #000000;
-  margin-bottom: 30px;
+  margin-bottom: 1.5625vw;
 }

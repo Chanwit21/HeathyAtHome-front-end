@@ -9,7 +9,7 @@ function TrainerPage() {
   return (
     <div>
       <NavComponent />
-      <div style={{ paddingTop: "60px", with: "100%" }}></div>
+      <div style={{ paddingTop: "3.125vw", with: "100%" }}></div>
       <div className="trainer-page">
         <section className="head-trainer-text">
           <div className="container">
@@ -81,7 +81,7 @@ function TrainerPage() {
         </section>
       </div>
       {/* Space Bottom */}
-      <div style={{ marginBottom: "40px" }}></div>
+      <div style={{ marginBottom: "2.083333333333333vw" }}></div>
       <div>
         <FooterComponent />
       </div>
