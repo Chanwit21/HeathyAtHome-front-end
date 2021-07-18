@@ -95,6 +95,10 @@
   border: 0.000520833vw solid #2b90c4;
 }
 
+.registerPage input[type="submit"]:hover {
+  cursor: pointer;
+}
+
 .registerPage .form-register p {
   text-align: center;
   font-weight: 600;

@@ -340,6 +340,11 @@
   margin: 0 auto;
 }
 
+
+/* Hover Pointer */
+.payment-page .payment-method input[type="submit"]:hover {
+  cursor: pointer;
+}
 /* Contact Us Section*/
 .payment-page .horizental-line {
   width: 100%;

@@ -11,7 +11,8 @@ import InformationServiceToRegisterProgramPage from "./Page/InformationServiceTo
 import ExpenseSummaryPage from "./Page/ExpenseSummaryPage";
 import PaymentPage from "./Page/PaymentPage";
 import PaymentSuccessPage from "./Page/PaymentSuccessPage";
-import InprogressProgramPage from "./Page/InprogressProgramPage";
+import UserInprogressProgramPage from "./Page/UserInprogressProgramPage";
+import UserProfilePage from "./Page/UserProfilePage";
 
 function App() {
 
@@ -29,7 +30,8 @@ function App() {
           <Route path='/expensesummarypage' component={ExpenseSummaryPage} />
           <Route path='/paymentpage' component={PaymentPage} />
           <Route path='/paymentsuccesspage' component={PaymentSuccessPage} />
-          <Route path='/inprogressprogrampage' component={InprogressProgramPage} />
+          <Route path='/inprogressprogrampage' component={UserInprogressProgramPage} />
+          <Route path='/user-profile-page' component={UserProfilePage} />
         </Switch>
       </BrowserRouter>
     </div>

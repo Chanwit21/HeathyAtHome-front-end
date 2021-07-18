@@ -132,3 +132,7 @@
   border-radius: 0.52083333vw;
   font-size: 1.4583333vw;
 }
+
+.service-page .form-to-decide form input[type="submit"]:hover {
+  cursor: pointer;
+}

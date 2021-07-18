@@ -42,6 +42,10 @@
   border: 0.000520833vw solid #2b90c4;
 }
 
+.service-cardOdd .text-content-in-servicecardOdd button:hover {
+cursor: pointer;
+}
+
 .service-cardOdd .price-in-service-cardOdd {
   font-weight: 600;
   font-size: 1.5625vw;
@@ -54,5 +58,5 @@
   height: 100%;
   width: 50%;
   background-size: cover;
-  border-radius: 0.52083vw 0 0 0.52083vw;
+  border-radius: 0 0.52083vw 0.52083vw 0;
 }

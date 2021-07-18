@@ -71,6 +71,10 @@
   border-radius: 0.52083vw;
 }
 
+.loginPage .scope-form-login input[type="submit"]:hover {
+  cursor: pointer;
+}
+
 .loginPage .scope-form-login p {
   font-weight: 600;
   font-size: 0.9375vw;

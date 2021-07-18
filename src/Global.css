@@ -14,4 +14,11 @@
   input {
     font-size: 1.041666666666667vw;
     color: rgba(0, 0, 0, 0.5);
+    padding-left: 1vw;
+  }
+
+  textarea {
+    padding-top: 0.5vw;
+    padding-left: 0.5vw;
+    font-size: 1.041666666666667vw;
   }

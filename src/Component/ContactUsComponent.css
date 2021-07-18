@@ -149,6 +149,10 @@
   border: 0.052083vw solid #2b90c4;
 }
 
+.contact-us-content input[type="submit"]:hover {
+  cursor: pointer;
+}
+
 .contact-us-content .contact-us-form img:first-child {
   position: absolute;
   margin-left: 36.5vw;

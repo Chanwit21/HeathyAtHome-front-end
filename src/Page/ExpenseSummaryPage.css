@@ -74,6 +74,10 @@
   justify-content: space-between;
 }
 
+.expen-summary-page .button-in-summary button:hover {
+ cursor: pointer;
+}
+
 .expen-summary-page .confirm-your-ourder {
   font-weight: 600;
   font-size: 1.041666vw;
