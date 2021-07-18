@@ -7,6 +7,11 @@ import './Global.css'
 import ServicePage from "./Page/ServicePage";
 import LoginPage from "./Page/LoginPage";
 import RegisterPage from "./Page/RegisterPage";
+import InformationServiceToRegisterProgramPage from "./Page/InformationServiceToRegisterProgramPage";
+import ExpenseSummaryPage from "./Page/ExpenseSummaryPage";
+import PaymentPage from "./Page/PaymentPage";
+import PaymentSuccessPage from "./Page/PaymentSuccessPage";
+import InprogressProgramPage from "./Page/InprogressProgramPage";
 
 function App() {
 
@@ -20,6 +25,11 @@ function App() {
           <Route path='/servicepage' component={ServicePage} />
           <Route path='/loginpage' component={LoginPage} />
           <Route path='/registerpage' component={RegisterPage} />
+          <Route path='/informatioservicetoregisterprogrampage' component={InformationServiceToRegisterProgramPage} />
+          <Route path='/expensesummarypage' component={ExpenseSummaryPage} />
+          <Route path='/paymentpage' component={PaymentPage} />
+          <Route path='/paymentsuccesspage' component={PaymentSuccessPage} />
+          <Route path='/inprogressprogrampage' component={InprogressProgramPage} />
         </Switch>
       </BrowserRouter>
     </div>

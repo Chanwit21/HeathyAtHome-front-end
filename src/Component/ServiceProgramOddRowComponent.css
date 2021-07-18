@@ -39,6 +39,7 @@
   background: #2b90c4;
   border-radius: 0.52083vw;
   margin-top: 1.5625vw;
+  border: 0.000520833vw solid #2b90c4;
 }
 
 .service-cardOdd .price-in-service-cardOdd {

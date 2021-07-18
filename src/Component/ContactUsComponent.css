@@ -54,7 +54,7 @@
 
 .contact-us-content .contact-us-form .label {
   margin-top: 1.718vw;
-  margin-left: 3.5vw;
+  margin-left: 3vw;
   display: inline-block;
   /* border: 1px dashed black; */
   font-weight: 600;
@@ -106,7 +106,7 @@
   /* border: 1px dashed black; */
   text-align: left;
   margin-top: 1.66666667vw;
-  margin-left: 13.28333vw;
+  margin-left: 13.78333vw;
 }
 
 .contact-us-content .contact-us-form .input input {
@@ -137,8 +137,8 @@
 
 .contact-us-content input[type="submit"] {
   margin-top: 0.83333vw;
-  margin-left: 3.5vw;
-  width: 43.01vw;
+  margin-left: 3vw;
+  width: 44.01vw;
   height: 2.60417vw;
   background: #2b90c4;
   border-radius: 0.520833vw;
@@ -146,6 +146,7 @@
   font-weight: 600;
   font-size: 1.5625vw;
   color: #ffffff;
+  border: 0.052083vw solid #2b90c4;
 }
 
 .contact-us-content .contact-us-form img:first-child {

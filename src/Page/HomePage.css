@@ -37,14 +37,15 @@
   margin-top: 2.23vw;
 }
 
-.homepage-body .result-text {
+.homepage-body .result-text h1{
   width: 100%;
   font-weight: 600;
-  font-size: 1.5625vw;
+  font-size: 2.6vw;
   text-align: center;
   color: #43c466;
   margin-bottom: 2.23vw;
 }
+
 
 .homepage-body .arrowResult {
   height: 1.3vw;
@@ -68,11 +69,11 @@
   margin-bottom: 8.2vw;
 }
 
-.homepage-body .trainer-text {
+.homepage-body .trainer-text h1{
   width: 100%;
-  font-weight: 600;
-  font-size: 1.5625vw;
   text-align: center;
+  font-size: 2.6vw;
+  font-weight: 600;
   color: #43c466;
   margin: 2.239583vw 0;
 }
