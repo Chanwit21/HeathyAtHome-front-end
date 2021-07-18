@@ -28,7 +28,7 @@ function LoginPage() {
                   <br />
                   <label htmlFor="password">Password</label>
                   <br />
-                  <input type="email" name="email" id="email" />
+                  <input type="password" name="email" id="email" />
                     <p><Link to="#" className="fogot-password">Forgot Your Password?</Link></p>
                   <input type="submit" value="LOG IN" />
                   <p>
