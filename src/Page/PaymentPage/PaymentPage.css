@@ -114,7 +114,7 @@
   input[type="password"] {
   padding-left: 0.4vw;
   display: inline-block;
-  width: 5.3833333vw;
+  width: 4.4833333vw;
   height: 2.63125vw;
   background: #ffffff;
   border: 0.05208333vw solid rgba(43, 144, 196, 0.5);
@@ -139,11 +139,12 @@
   font-weight: 600;
   font-size: 1.3020833vw;
   color: #ffffff;
-  width: 216.38px;
-  height: 40px;
+  width: 11.269791666vw;
+  height: 2.0833333vw;
   background: #2b90c4;
   border-radius: 0.520833vw;
   border: 0.0520833vw solid rgba(43, 144, 196, 0.5);
+  padding-left: 0;
 }
 
 /* transfer-through-bank-account */
@@ -218,11 +219,12 @@
   font-weight: 600;
   font-size: 1.3020833vw;
   color: #ffffff;
-  width: 216.38px;
-  height: 40px;
+  width: 11.269791666vw;
+  height: 2.0833333vw;
   background: #2b90c4;
   border-radius: 0.520833vw;
   border: 0.0520833vw solid rgba(43, 144, 196, 0.5);
+  padding-left: 0;
 }
 
 /* Counter Service */
@@ -275,11 +277,12 @@
   font-weight: 600;
   font-size: 1.3020833vw;
   color: #ffffff;
-  width: 216.38px;
-  height: 40px;
+  width: 11.269791666vw;
+  height: 2.0833333vw;
   background: #2b90c4;
   border-radius: 0.520833vw;
   border: 0.0520833vw solid rgba(43, 144, 196, 0.5);
+  padding-left: 0;
 }
 
 

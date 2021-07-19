@@ -1,6 +1,6 @@
 import React from "react";
-import FooterComponent from "../Component/FooterComponent";
-import NavComponent from "../Component/NavComponent";
+import FooterComponent from "../../Component/FooterComponent/FooterComponent";
+import NavComponent from "../../Component/NavComponent/NavComponent";
 import { Link } from 'react-router-dom'
 import "./PaymentSuccessPage.css";
 

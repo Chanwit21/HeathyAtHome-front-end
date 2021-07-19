@@ -1,12 +1,12 @@
 import React from "react";
-import ContactUsComponent from "../Component/ContactUsComponent";
-import FooterComponent from "../Component/FooterComponent";
-import NavBarLeftForUserComponent from "../Component/NavBarLeftForUserComponent";
-import NavComponent from "../Component/NavComponent";
-import UserInprogressProgramCardComponent from "../Component/UserInprogressProgramCardComponent";
+import ContactUsComponent from "../../Component/ContactUsComponent/ContactUsComponent";
+import FooterComponent from "../../Component/FooterComponent/FooterComponent";
+import NavBarLeftForUserComponent from "../../Component/NavBarLeftForUserComponent/NavBarLeftForUserComponent";
+import NavComponent from "../../Component/NavComponent/NavComponent";
+import UserInprogressProgramCardComponent from "../../Component/UserInprogressProgramCardComponent/UserInprogressProgramCardComponent";
 import "./UserInprogressProgramPage.css";
 import { Link } from "react-router-dom";
-import UserConsultTrainerComponent from "../Component/UserConsultTrainerComponent";
+import UserConsultTrainerComponent from "../../Component/UserConsultTrainerComponent/UserConsultTrainerComponent";
 
 function UserInprogressProgramPage() {
   return (

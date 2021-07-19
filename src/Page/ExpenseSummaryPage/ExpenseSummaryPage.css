@@ -1,11 +1,15 @@
 .expen-summary-page .container {
   width: 80%;
+  height: 86.5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
 }
 
 .expen-summary-page .form-sumary {
   display: flex;
-  margin: 0 auto;
+  margin: 3.5vw auto;
   width: 60.729166vw;
   height: 40.208333vw;
   background: #ffffff;

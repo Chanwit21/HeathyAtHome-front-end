@@ -1,11 +1,9 @@
 import React from 'react'
-import ContactUsComponent from '../Component/ContactUsComponent'
-import FooterComponent from '../Component/FooterComponent'
-import NavBarLeftForUserComponent from '../Component/NavBarLeftForUserComponent'
-import NavComponent from '../Component/NavComponent'
+import ContactUsComponent from '../../Component/ContactUsComponent/ContactUsComponent'
+import FooterComponent from '../../Component/FooterComponent/FooterComponent'
+import NavBarLeftForUserComponent from '../../Component/NavBarLeftForUserComponent/NavBarLeftForUserComponent'
+import NavComponent from '../../Component/NavComponent/NavComponent'
 import './UserProfilePage.css'
-import UserConsultTrainerComponent from "../Component/UserConsultTrainerComponent";
-import {Link} from 'react-router-dom'
 
 function UserProfilePage() {
     return (

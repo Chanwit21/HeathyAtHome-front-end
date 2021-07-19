@@ -1,18 +1,18 @@
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import React from "react";
-import HomePage from "./Page/HomePage";
-import AboutPage from "./Page/AboutPage";
-import TrainerPage from "./Page/TrainerPage";
+import HomePage from "./Page/HomePage/HomePage";
+import AboutPage from "./Page/AboutPage/AboutPage";
+import TrainerPage from "./Page/TrainerPage/TrainerPage";
 import './Global.css'
-import ServicePage from "./Page/ServicePage";
-import LoginPage from "./Page/LoginPage";
-import RegisterPage from "./Page/RegisterPage";
-import InformationServiceToRegisterProgramPage from "./Page/InformationServiceToRegisterProgramPage";
-import ExpenseSummaryPage from "./Page/ExpenseSummaryPage";
-import PaymentPage from "./Page/PaymentPage";
-import PaymentSuccessPage from "./Page/PaymentSuccessPage";
-import UserInprogressProgramPage from "./Page/UserInprogressProgramPage";
-import UserProfilePage from "./Page/UserProfilePage";
+import ServicePage from "./Page/ServicePage/ServicePage";
+import LoginPage from "./Page/LoginPage/LoginPage";
+import RegisterPage from "./Page/RegisterPage/RegisterPage";
+import InformationServiceToRegisterProgramPage from "./Page/InformationServiceToRegisterProgramPage/InformationServiceToRegisterProgramPage";
+import ExpenseSummaryPage from "./Page/ExpenseSummaryPage/ExpenseSummaryPage";
+import PaymentPage from "./Page/PaymentPage/PaymentPage";
+import PaymentSuccessPage from "./Page/PaymentSuccessPage/PaymentSuccessPage";
+import UserInprogressProgramPage from "./Page/UserInprogressProgramPage/UserInprogressProgramPage";
+import UserProfilePage from "./Page/UserProfilePage/UserProfilePage";
 
 function App() {
 

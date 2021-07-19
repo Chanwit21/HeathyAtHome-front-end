@@ -4,6 +4,10 @@
 
 .registerPage .container {
   margin: 0 auto;
+  height: 84vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 80%;
 }
 

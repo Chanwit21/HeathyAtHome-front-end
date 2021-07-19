@@ -1,9 +1,9 @@
 import React from "react";
-import NavComponent from "../Component/NavComponent";
-import FooterComponent from "../Component/FooterComponent";
-import TrainerCardMiniSizeComponent from "../Component/TrainerCardMiniSizeComponent";
+import NavComponent from "../../Component/NavComponent/NavComponent";
+import FooterComponent from "../../Component/FooterComponent/FooterComponent";
+import TrainerCardMiniSizeComponent from "../../Component/TrainerCardMiniSizeComponent/TrainerCardMiniSizeComponent";
 import "./TrainerPage.css";
-import ContactUsComponent from "../Component/ContactUsComponent";
+import ContactUsComponent from "../../Component/ContactUsComponent/ContactUsComponent";
 
 function TrainerPage() {
   return (

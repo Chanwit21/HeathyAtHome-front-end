@@ -1,7 +1,7 @@
 import React from "react";
-import ContactUsComponent from "../Component/ContactUsComponent";
-import FooterComponent from "../Component/FooterComponent";
-import NavComponent from "../Component/NavComponent";
+import ContactUsComponent from "../../Component/ContactUsComponent/ContactUsComponent";
+import FooterComponent from "../../Component/FooterComponent/FooterComponent";
+import NavComponent from "../../Component/NavComponent/NavComponent";
 import "./InformationServiceToRegisterProgramPage.css";
 
 function InformationServiceToRegisterProgramPage() {

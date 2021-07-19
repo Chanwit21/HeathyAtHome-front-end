@@ -1,6 +1,6 @@
 import React from "react";
-import NavComponent from "../Component/NavComponent";
-import FooterComponent from "../Component/FooterComponent";
+import NavComponent from "../../Component/NavComponent/NavComponent";
+import FooterComponent from "../../Component/FooterComponent/FooterComponent";
 import { Link } from "react-router-dom";
 import "./LoginPage.css";
 

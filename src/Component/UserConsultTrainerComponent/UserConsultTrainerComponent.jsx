@@ -1,6 +1,6 @@
 import React from "react";
 import "./UserConsultTrainerComponent.css";
-import TrainerCardMiniSizeComponent from "./TrainerCardMiniSizeComponent";
+import TrainerCardMiniSizeComponent from "../TrainerCardMiniSizeComponent/TrainerCardMiniSizeComponent";
 
 function ConsultTrainerComponent(props) {
   return (

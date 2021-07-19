@@ -1,10 +1,10 @@
 import React from "react";
-import NavComponent from "../Component/NavComponent";
+import NavComponent from "../../Component/NavComponent/NavComponent";
 import { Link } from "react-router-dom";
-import FooterComponent from "../Component/FooterComponent";
+import FooterComponent from "../../Component/FooterComponent/FooterComponent";
 import "./HomePage.css";
-import TrainerCardComponent from "../Component/TrainerCardComponent";
-import ContactUsComponent from "../Component/ContactUsComponent";
+import TrainerCardComponent from "../../Component/TrainerCardComponent/TrainerCardComponent";
+import ContactUsComponent from "../../Component/ContactUsComponent/ContactUsComponent";
 
 function HomePage() {
   return (

@@ -1,5 +1,9 @@
 .payment-success-page .container {
   width: 80%;
+  height: 89.5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
 }
 
@@ -12,7 +16,7 @@
   background: #ffffff;
   box-shadow: 0.2083vw 0.2083vw 0.52083vw 0.26vw rgba(0, 0, 0, 0.25);
   border-radius: 0.52083vw;
-  margin: 3vw auto;
+  margin: 4vw auto;
   display: flex;
   justify-content: center;
   align-items: center;

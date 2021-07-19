@@ -5,7 +5,11 @@
 .loginPage .container {
   /* border: 1px dashed black; */
   width: 80%;
+  height: 84vh;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Background */
@@ -13,7 +17,7 @@
   margin: 0 auto;
   margin-top: 5.46875vw;
   width: 40.83333333vw;
-  height: 34.8125vw;
+  height: 37.8125vw;
   background: #ffffff;
   border: 0.052083vw solid rgba(43, 144, 196, 0.5);
   box-sizing: border-box;

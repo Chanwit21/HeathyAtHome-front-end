@@ -131,6 +131,8 @@
   color: #ffffff;
   border-radius: 0.52083333vw;
   font-size: 1.4583333vw;
+  text-align: center;
+  padding-left: 0;
 }
 
 .service-page .form-to-decide form input[type="submit"]:hover {
