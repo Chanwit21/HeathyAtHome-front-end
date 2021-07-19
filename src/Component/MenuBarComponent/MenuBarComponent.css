@@ -1,0 +1,32 @@
+.menu-bar-component .content-box {
+  background: #ffffff;
+  box-shadow: 0.2083vw 0.2083vw 0.52083vw 0.26vw rgba(0, 0, 0, 0.25);
+  border-radius: 0.52083vw;
+  width: 11.875vw;
+  height: 9.42708333vw;
+}
+
+/* .menu-bar-component .content-box h1 {
+  width: 11.875vw;
+  padding-left: 1vw;
+  box-sizing: border-box;
+} */
+
+.menu-bar-component .content-box h1 {
+  width: 11.875vw;
+  height: 3.14236111vw;
+  padding-left: 1vw;
+  box-sizing: border-box;
+}
+.menu-bar-component .content-box a {
+  text-decoration: none;
+  box-sizing: border-box;
+  display: block;
+  color: #00000088;
+  height: 3.14236111vw;
+  padding-top: 0.55vw;
+}
+
+.onPage {
+  background: rgba(97, 209, 150, 0.5);
+}

@@ -13,6 +13,7 @@ import PaymentPage from "./Page/PaymentPage/PaymentPage";
 import PaymentSuccessPage from "./Page/PaymentSuccessPage/PaymentSuccessPage";
 import UserInprogressProgramPage from "./Page/UserInprogressProgramPage/UserInprogressProgramPage";
 import UserProfilePage from "./Page/UserProfilePage/UserProfilePage";
+import UserWorkoutSchedulePage from "./Page/UserWorkoutSchedulePage/UserWorkoutSchedulePage";
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
           <Route path='/paymentsuccesspage' component={PaymentSuccessPage} />
           <Route path='/inprogressprogrampage' component={UserInprogressProgramPage} />
           <Route path='/user-profile-page' component={UserProfilePage} />
+          <Route path='/user-workout-schedule-page' component={UserWorkoutSchedulePage} />
         </Switch>
       </BrowserRouter>
     </div>

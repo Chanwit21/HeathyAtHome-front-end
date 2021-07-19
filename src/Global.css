@@ -13,8 +13,13 @@
 
   input {
     font-size: 1.041666666666667vw;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 1);
     padding-left: 1vw;
+  }
+
+  input:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.052083vw #2b90c4;
   }
 
   textarea {
