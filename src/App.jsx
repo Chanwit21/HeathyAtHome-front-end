@@ -14,6 +14,9 @@ import PaymentSuccessPage from "./Page/PaymentSuccessPage/PaymentSuccessPage";
 import UserInprogressProgramPage from "./Page/UserInprogressProgramPage/UserInprogressProgramPage";
 import UserProfilePage from "./Page/UserProfilePage/UserProfilePage";
 import UserWorkoutSchedulePage from "./Page/UserWorkoutSchedulePage/UserWorkoutSchedulePage";
+import UserFoodSchedulePage from "./Page/UserFoodSchedulePage/UserFoodSchedulePage";
+import UserFoodSchedulePagePreWorkout from "./Page/UserFoodSchedulePagePreWorkout/UserFoodSchedulePagePreWorkout";
+import UserFoodSchedulePagePostWorkout from "./Page/UserFoodSchedulePagePostWorkout/UserFoodSchedulePagePostWorkout";
 
 function App() {
 
@@ -34,6 +37,9 @@ function App() {
           <Route path='/inprogressprogrampage' component={UserInprogressProgramPage} />
           <Route path='/user-profile-page' component={UserProfilePage} />
           <Route path='/user-workout-schedule-page' component={UserWorkoutSchedulePage} />
+          <Route path='/user-food-schedule-page' component={UserFoodSchedulePage} />
+          <Route path='/user-food-schedule-page-pre-workout' component={UserFoodSchedulePagePreWorkout} />
+          <Route path='/user-food-schedule-page-post-workout' component={UserFoodSchedulePagePostWorkout} />
         </Switch>
       </BrowserRouter>
     </div>

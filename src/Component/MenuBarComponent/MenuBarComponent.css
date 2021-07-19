@@ -3,7 +3,7 @@
   box-shadow: 0.2083vw 0.2083vw 0.52083vw 0.26vw rgba(0, 0, 0, 0.25);
   border-radius: 0.52083vw;
   width: 11.875vw;
-  height: 9.42708333vw;
+  /* height: 9.42708333vw; */
 }
 
 /* .menu-bar-component .content-box h1 {
@@ -27,6 +27,20 @@
   padding-top: 0.55vw;
 }
 
-.onPage {
+.menu-bar-component .onPage {
   background: rgba(97, 209, 150, 0.5);
+}
+
+/* Foodmenubar */
+.menu-bar-component .food-menu-bar {
+  outline: 0.0520833vw solid rgba(0, 0, 0, 0.2);
+  border-width: 100%;
+}
+
+.menu-bar-component .food-menu-bar h1 {
+  font-weight: normal;
+  font-size: 1.5625vw;
+  color: rgba(0, 0, 0, 0.5);
+  /* border: 1px solid black; */
+  box-sizing: border-box;
 }
