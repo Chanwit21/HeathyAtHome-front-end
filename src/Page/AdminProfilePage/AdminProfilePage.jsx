@@ -8,6 +8,8 @@ function AdminProfilePage() {
   const arrayProfileContents = [
     {
       name: "Chanwit Pansila",
+      status: "Admin",
+      imgPath: "./PIC/Icon/user.png",
       contents: [
         { "col-left": "Phone Number", 
         "col-right": "089-697-xxx" 
@@ -45,9 +47,9 @@ function AdminProfilePage() {
             <div className="row-of-navbar-left-and-profile-content">
               <div className="navbar-left-admin-trainer-component-in-page">
                 <NavBarLeftForAdminAndTrainerComponent
-                  imgPath="./PIC/Icon/user.png"
-                  name="Chanwit Pansila"
-                  status="Admin"
+                  imgPath={arrayFilter[0].imgPath}
+                  name={arrayFilter[0].name}
+                  status={arrayFilter[0].status}
                   onPage="AdminProfilePage"
                 />
               </div>
