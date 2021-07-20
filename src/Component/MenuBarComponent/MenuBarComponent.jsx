@@ -122,9 +122,9 @@ function MenuBarComponent(props) {
           </Link>
         </div>
         <Link
-          to="/user-weekly-update-schedule-page"
+          to="/user-weekly-update-page"
           className={
-            props.Page === "UserWeeklyUpdateSchedulePage" ? "onPage" : ""
+            props.Page === "UserWeeklyUpdatePage" ? "onPage" : ""
           }
           style={{ borderRadius: " 0 0 0.520833vw 0.520833vw" }}
         >

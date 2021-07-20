@@ -341,97 +341,19 @@ function UserWorkoutSchedulePage() {
                         >
                           {element.day}
                         </td>
-                        <td
+                        {element.exercise.map((item) =>{ return (<td
                           style={{
-                            backgroundColor: element.exercise[0].colorCode,
+                            backgroundColor: item.colorCode,
                           }}
                         >
                           <a
                             target="_blank"
-                            href={element.exercise[0].Link}
-                            style={{ color: element.exercise[0].color }}
+                            href={item.Link}
+                            style={{ color: item.color }}
                           >
-                            {element.exercise[0].exerciseName}
+                            {item.exerciseName}
                           </a>
-                        </td>
-                        <td
-                          style={{
-                            backgroundColor: element.exercise[1].colorCode,
-                          }}
-                        >
-                          <a
-                            target="_blank"
-                            href={element.exercise[1].Link}
-                            style={{ color: element.exercise[1].color }}
-                          >
-                            {element.exercise[1].exerciseName}
-                          </a>
-                        </td>
-                        <td
-                          style={{
-                            backgroundColor: element.exercise[2].colorCode,
-                          }}
-                        >
-                          <a
-                            target="_blank"
-                            href={element.exercise[2].Link}
-                            style={{ color: element.exercise[2].color }}
-                          >
-                            {element.exercise[2].exerciseName}
-                          </a>
-                        </td>
-                        <td
-                          style={{
-                            backgroundColor: element.exercise[3].colorCode,
-                          }}
-                        >
-                          <a
-                            target="_blank"
-                            href={element.exercise[3].Link}
-                            style={{ color: element.exercise[3].color }}
-                          >
-                            {element.exercise[3].exerciseName}
-                          </a>
-                        </td>
-                        <td
-                          style={{
-                            backgroundColor: element.exercise[4].colorCode,
-                          }}
-                        >
-                          <a
-                            target="_blank"
-                            href={element.exercise[4].Link}
-                            style={{ color: element.exercise[4].color }}
-                          >
-                            {element.exercise[4].exerciseName}
-                          </a>
-                        </td>
-                        <td
-                          style={{
-                            backgroundColor: element.exercise[5].colorCode,
-                          }}
-                        >
-                          <a
-                            target="_blank"
-                            href={element.exercise[5].Link}
-                            style={{ color: element.exercise[5].color }}
-                          >
-                            {element.exercise[5].exerciseName}
-                          </a>
-                        </td>
-                        <td
-                          style={{
-                            backgroundColor: element.exercise[6].colorCode,
-                          }}
-                        >
-                          <a
-                            target="_blank"
-                            href={element.exercise[6].Link}
-                            style={{ color: element.exercise[6].color }}
-                          >
-                            {element.exercise[6].exerciseName}
-                          </a>
-                        </td>
+                        </td>)} )}
                         <td
                           colSpan="1"
                           style={{ backgroundColor: "#FFFFFF" }}

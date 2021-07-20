@@ -1,29 +1,39 @@
 /* Global */
 * {
-    font-family: "Dosis", sans-serif;
-    padding: 0;
-    margin: 0;
-    font-size: 1.5vw;
-  }
-  
-  body {
-    background-color: #fff6dd;
-    width: 100%;
-  }
+  font-family: "Dosis", sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 1.5vw;
+}
 
-  input {
-    font-size: 1.041666666666667vw;
-    color: rgba(0, 0, 0, 1);
-    padding-left: 1vw;
-  }
+body {
+  background-color: #fff6dd;
+  width: 100%;
+}
 
-  input:focus {
-    outline: none;
-    box-shadow: 0 0 0 0.052083vw #2b90c4;
-  }
+input {
+  font-size: 1.041666666666667vw;
+  color: rgba(0, 0, 0, 1);
+  padding-left: 1vw;
+}
 
-  textarea {
-    padding-top: 0.5vw;
-    padding-left: 0.5vw;
-    font-size: 1.041666666666667vw;
-  }
+input:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.052083vw #2b90c4;
+}
+
+textarea {
+  padding-top: 0.5vw;
+  padding-left: 0.5vw;
+  font-size: 1.041666666666667vw;
+}
+
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.052083vw #2b90c4;
+}
+
+select:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.052083vw #2b90c4;
+}

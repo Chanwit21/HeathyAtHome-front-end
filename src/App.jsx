@@ -1,9 +1,9 @@
 import { BrowserRouter, Switch, Route } from "react-router-dom";
+import './Global.css'
 import React from "react";
 import HomePage from "./Page/HomePage/HomePage";
 import AboutPage from "./Page/AboutPage/AboutPage";
 import TrainerPage from "./Page/TrainerPage/TrainerPage";
-import './Global.css'
 import ServicePage from "./Page/ServicePage/ServicePage";
 import LoginPage from "./Page/LoginPage/LoginPage";
 import RegisterPage from "./Page/RegisterPage/RegisterPage";
@@ -17,6 +17,10 @@ import UserWorkoutSchedulePage from "./Page/UserWorkoutSchedulePage/UserWorkoutS
 import UserFoodSchedulePage from "./Page/UserFoodSchedulePage/UserFoodSchedulePage";
 import UserFoodSchedulePagePreWorkout from "./Page/UserFoodSchedulePagePreWorkout/UserFoodSchedulePagePreWorkout";
 import UserFoodSchedulePagePostWorkout from "./Page/UserFoodSchedulePagePostWorkout/UserFoodSchedulePagePostWorkout";
+import UserFoodSchedulePageFoodSchedule from "./Page/UserFoodSchedulePageFoodSchedule/UserFoodSchedulePageFoodSchedule";
+import UserWeeklyUpdatePage from "./Page/UserWeeklyUpdateSchedulePage/UserWeeklyUpdatePage";
+import VedioPage from "./Page/VedioPage/VedioPage";
+import AdminProfilePage from "./Page/AdminProfilePage/AdminProfilePage";
 
 function App() {
 
@@ -40,6 +44,10 @@ function App() {
           <Route path='/user-food-schedule-page' component={UserFoodSchedulePage} />
           <Route path='/user-food-schedule-page-pre-workout' component={UserFoodSchedulePagePreWorkout} />
           <Route path='/user-food-schedule-page-post-workout' component={UserFoodSchedulePagePostWorkout} />
+          <Route path='/user-food-schedule-page-food-schedule' component={UserFoodSchedulePageFoodSchedule} />
+          <Route path='/user-weekly-update-page' component={UserWeeklyUpdatePage} />
+          <Route path='/vedio-page' component={VedioPage} />
+          <Route path='/admin-profile-page' component={AdminProfilePage} />
         </Switch>
       </BrowserRouter>
     </div>
