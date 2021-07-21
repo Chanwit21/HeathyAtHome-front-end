@@ -162,6 +162,13 @@
 
 
 /* IMG size */
+.admin-manage-videos-and-food-page .food-schedule .row-img-and-add-del-img-button {
+  /* width: 53.6458333vw; */
+  width: 100%;
+  display: block;
+  margin-bottom: 4vw;
+}
+
 .admin-manage-videos-and-food-page .food-schedule img {
   /* width: 53.6458333vw; */
   width: 100%;
@@ -180,7 +187,7 @@
 }
 
 /* Add Del Image Button */
-.admin-manage-videos-and-food-page .food-schedule .add-del-img {
+.admin-manage-videos-and-food-page .food-schedule .del-img {
   border-left: 1px solid black;
   border-right: 1px solid black;
   border-bottom: 1px solid black;
@@ -191,11 +198,11 @@
   background-color: #ffffff;
 }
 
-.admin-manage-videos-and-food-page .food-schedule .add-del-img input {
+.admin-manage-videos-and-food-page .food-schedule .del-img input {
   width: 15.208333333vw;
 }
 
-.admin-manage-videos-and-food-page .food-schedule .add-del-img button[type='submit'] {
+.admin-manage-videos-and-food-page .food-schedule .del-img button[type='submit'] {
   width: 15.208333333vw;
   height: 3.08333333333vw;
   background: #2b90c4;
@@ -207,7 +214,7 @@
   margin-top: 1vw;
 }
 
-.admin-manage-videos-and-food-page .food-schedule .add-del-img button {
+.admin-manage-videos-and-food-page .food-schedule .del-img button {
   width: 15.208333333vw;
   height: 3.08333333333vw;
   background: #2b90c4;
@@ -218,23 +225,40 @@
   color: #ffffff;
 }
 
-.admin-manage-videos-and-food-page .food-schedule .add-del-img button:hover {
+.admin-manage-videos-and-food-page .food-schedule .del-img button:hover {
   cursor: pointer;
 }
 
-.admin-manage-videos-and-food-page .food-schedule .add-del-img .add-button {
-  width: 50%;
+
+.admin-manage-videos-and-food-page .food-schedule .del-img .del-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.admin-manage-videos-and-food-page .food-schedule .add-button {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: #ffffff;
+  height: 7vw;
+  border: 0.052083333vw solid #000000;
 }
 
-.admin-manage-videos-and-food-page .food-schedule .add-del-img .del-button {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-left: 2px solid black;
+.admin-manage-videos-and-food-page .food-schedule .add-button button {
+  width: 15.208333333vw;
+  height: 3.08333333333vw;
+  background: #2b90c4;
+  border-radius: 0.52083333vw;
+  border: 0.052083333vw solid #2b90c4;
+  font-weight: 600;
+  font-size: 1.04166666vw;
+  color: #ffffff;
 }
 
+.admin-manage-videos-and-food-page .food-schedule .add-button button:hover {
+  cursor: pointer;
+}

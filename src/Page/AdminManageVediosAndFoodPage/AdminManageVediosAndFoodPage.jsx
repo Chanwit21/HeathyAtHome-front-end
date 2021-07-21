@@ -82,10 +82,12 @@ function AdminManageVediosAndFoodPage() {
         "Snack",
       ],
       none: [],
-      "Pre Work Out": "./PIC/FoodTable/PRE-WORKOUT-MEAL.jpg",
-      "Post Work Out": "./PIC/FoodTable/POST-WORKOUT-MEAL.jpg",
-      "Normal Meal": "",
-      Snack: "",
+      "Pre Work Out": [
+        "./PIC/FoodTable/PRE-WORKOUT-MEAL.jpg"
+      ],
+      "Post Work Out": ["./PIC/FoodTable/POST-WORKOUT-MEAL.jpg"],
+      "Normal Meal": [],
+      Snack: [],
     },
   ];
   const valueInSelect = scheduleType;
@@ -220,37 +222,34 @@ function AdminManageVediosAndFoodPage() {
                   className="food-schedule"
                   style={{ display: scheduleType === "Food" ? "" : "none" }}
                 >
-                  <img
-                    src={
-                      arrFillterOfValueSelect[0][valueOfContentInScheduleSelect]
-                    }
-                    alt={valueOfContentInScheduleSelect}
-                    style={{
-                      display:
-                        arrFillterOfValueSelect[0][
-                          valueOfContentInScheduleSelect
-                        ].length === 0
-                          ? "none"
-                          : "",
-                    }}
-                  />
-                  <div className="add-del-img"
-                  style={{
-                    display:
-                      arrFillterOfValueSelect[0][
-                        valueOfContentInScheduleSelect
-                      ].length === 0
-                        ? "none"
-                        : "",
-                  }}
-                  >
-                    <div className="add-button">
-                      <input type="file" name="addimage" id="addimage" />
-                      <button type="submit">Add</button>
-                    </div>
-                    <div className="del-button">
-                      <button>Delete Image</button>
-                    </div>
+                  {arrFillterOfValueSelect[0][
+                    valueOfContentInScheduleSelect
+                  ].map((item, index) => {
+                    return (
+                      <div className="row-img-and-add-del-img-button">
+                        <img
+                          src={item}
+                          alt={`path-${index}`}
+                          style={{
+                            display: item.length === 0 ? "none" : "",
+                          }}
+                        />
+                        <div
+                          className="del-img"
+                          style={{
+                            display: item.length === 0 ? "none" : "",
+                          }}
+                        >
+                          <div className="del-button">
+                            <button id={`del-index-${index}`}>Delete Image</button>
+                          </div>
+                        </div>
+                      </div>
+                    );
+                  })}
+                  <div className="add-button">
+                    <input type="file" name="addimage" id="addimage" />
+                    <button type="submit">Add</button>
                   </div>
                 </div>
               </div>
