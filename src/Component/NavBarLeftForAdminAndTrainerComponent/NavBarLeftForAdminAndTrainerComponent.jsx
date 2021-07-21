@@ -7,7 +7,9 @@ function NavBarLeftForAdminAndTrainerComponent(props) {
     <div className="navbar-left-admin-trainer-component">
       <section className="img">
         <div className="img-profile">
-          <img src={props.imgPath} alt="imgProfile" />
+          <img src={props.imgPath} alt="imgProfile" 
+          style={{objectPosition:props.imgPosition}}
+          />
         </div>
       </section>
       <section className="name-and-status">
@@ -67,20 +69,20 @@ function NavBarLeftForAdminAndTrainerComponent(props) {
         <Link
           style={{
             backgroundColor:
-              props.onPage === "AdminManageVideosAndFoodPage" ||
+              props.onPage === "AdminManageVediosAndFoodPage" ||
               props.onPage === "TrainerManageVideosAndFoodPage"
                 ? "rgba(97, 209, 150, 0.5)"
                 : "",
             color:
-              props.onPage === "AdminManageVideosAndFoodPage" ||
+              props.onPage === "AdminManageVediosAndFoodPage" ||
               props.onPage === "TrainerManageVideosAndFoodPage"
                 ? "#000000FF"
                 : "",
           }}
           to={
             props.status === "Admin"
-              ? "/admin-manage-videos-and-food-page"
-              : "/trainer-manage-videos-and-food-page"
+              ? "/admin-manage-vedios-and-food-page"
+              : "/trainer-manage-vedios-and-food-page"
           }
         >
           <h1>Manage videos and food</h1>

@@ -10,10 +10,9 @@ function AdminProfilePage() {
       name: "Chanwit Pansila",
       status: "Admin",
       imgPath: "./PIC/Icon/user.png",
+      imgPosition: "0 0",
       contents: [
-        { "col-left": "Phone Number", 
-        "col-right": "089-697-xxx" 
-        },
+        { "col-left": "Phone Number", "col-right": "089-697-xxx" },
         {
           "col-left": "Gender",
           "col-right": "Male",
@@ -51,6 +50,7 @@ function AdminProfilePage() {
                   name={arrayFilter[0].name}
                   status={arrayFilter[0].status}
                   onPage="AdminProfilePage"
+                  imgPosition={arrayFilter[0].imgPosition}
                 />
               </div>
               <div className="profile-content">

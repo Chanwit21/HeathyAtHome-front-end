@@ -15,6 +15,9 @@
 
 .navbar-left-admin-trainer-component .img-profile img {
   width: 10vw;
+  height: 10vw;
+  border-radius: 5vw;
+  object-fit: cover;
 }
 
 /* section Status */

@@ -21,6 +21,8 @@ import UserFoodSchedulePageFoodSchedule from "./Page/UserFoodSchedulePageFoodSch
 import UserWeeklyUpdatePage from "./Page/UserWeeklyUpdateSchedulePage/UserWeeklyUpdatePage";
 import VedioPage from "./Page/VedioPage/VedioPage";
 import AdminProfilePage from "./Page/AdminProfilePage/AdminProfilePage";
+import AdminManageVediosAndFoodPage from "./Page/AdminManageVediosAndFoodPage/AdminManageVediosAndFoodPage";
+import AdminCustomersPage from "./Page/AdminCustomersPage/AdminCustomersPage";
 
 function App() {
 
@@ -48,6 +50,8 @@ function App() {
           <Route path='/user-weekly-update-page' component={UserWeeklyUpdatePage} />
           <Route path='/vedio-page' component={VedioPage} />
           <Route path='/admin-profile-page' component={AdminProfilePage} />
+          <Route path='/admin-manage-vedios-and-food-page' component={AdminManageVediosAndFoodPage} />
+          <Route path='/admin-customers-page' component={AdminCustomersPage} />
         </Switch>
       </BrowserRouter>
     </div>
