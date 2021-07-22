@@ -167,6 +167,7 @@ function TrainerManageVideosAndFoodPage() {
                       name="typeOfSchedule"
                       id="type-of-content-in-schedule"
                       onChange={(e) => changeValueOfContentInScheduleSelect(e)}
+                      value={valueOfContentInScheduleSelect}
                     >
                       <option value="none">none</option>
                       {arrFillterOfValueSelect[0].typeOfContentInSchedule.map(
