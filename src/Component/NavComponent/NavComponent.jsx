@@ -7,6 +7,7 @@ function NavComponent() {
     <div>
       <nav className="navBar">
         <div className="navContainer">
+        <Link to="/">
           <div className="Logo">
             <div className="H-Logo">
               <img src="./PIC/LOGO/h.png" alt="H_Logo" />
@@ -18,6 +19,7 @@ function NavComponent() {
               />
             </div>
           </div>
+          </Link>
           <div className="nav-content">
             <ul>
               <li>
