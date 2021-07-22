@@ -16,7 +16,7 @@ function ServicePage() {
             <div className="odd-section-of-secvice-card">
               <ServiceProgramOddRowComponent
                 imgPath="../PIC/Course/pexels-jacoby-clarke-1933524.jpg"
-                courseName="90 Days Program"
+                courseName="45 Days Program"
                 content="Suitable for people who want to change their shape in a short time."
                 Price="15,000"
               />

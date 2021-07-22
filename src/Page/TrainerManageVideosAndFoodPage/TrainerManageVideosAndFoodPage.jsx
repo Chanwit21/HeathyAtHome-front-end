@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import FooterComponent from "../../Component/FooterComponent/FooterComponent";
 import NavBarLeftForAdminAndTrainerComponent from "../../Component/NavBarLeftForAdminAndTrainerComponent/NavBarLeftForAdminAndTrainerComponent";
 import NavComponent from "../../Component/NavComponent/NavComponent";
-import "./AdminManageVediosAndFoodPage.css";
+import "./TrainerManageVideosAndFoodPage.css";
 
-function AdminManageVediosAndFoodPage() {
+function TrainerManageVideosAndFoodPage() {
   const [scheduleType, setScheduleType] = useState("none");
   const [valueOfContentInScheduleSelect, setValueOfContentInScheduleSelect] =
     useState("none");
@@ -31,12 +31,33 @@ function AdminManageVediosAndFoodPage() {
       ],
     },
     {
-      name: "Supachai Kingkeaw",
-      contents: [{ "col-left": "Phone Number", "col-right": "089-697-xxx" }],
+        name: "Thanapob SingHaseanee",
+        status: "Trainer",
+        imgPath: "./PIC/Trainer/pexels-thisisengineering-3912944.jpg",
+        imgPosition: "0 0",
+        contents: [
+          { "col-left": "Phone Number", "col-right": "089-697-xxx" },
+          {
+            "col-left": "Gender",
+            "col-right": "Male",
+          },
+          {
+            "col-left": "Weight",
+            "col-right": "63 kg.",
+          },
+          {
+            "col-left": "Heigth",
+            "col-right": "171 cm.",
+          },
+          {
+            "col-left": "Education",
+            "col-right": "Faculty of Physical Education Srinakharinwirot university.",
+          },
+        ],
     },
   ];
   const arrayProfileFilter = arrayProfileContents.filter(
-    (item) => item.name === "Chanwit Pansila"
+    (item) => item.name === "Thanapob SingHaseanee"
   );
   // console.log(arrayProfileFilter)
   const dataVedioAndFood = [
@@ -117,7 +138,7 @@ function AdminManageVediosAndFoodPage() {
     <div>
       <NavComponent />
       <div style={{ paddingTop: "3.125vw", with: "100%" }}></div>
-      <div className="admin-manage-videos-and-food-page">
+      <div className="trainer-manage-videos-and-food-page">
         <section className="manage-videos-and-food">
           <div className="container">
             <div className="row-of-navbar-left-and-manage-videos-and-food">
@@ -126,7 +147,7 @@ function AdminManageVediosAndFoodPage() {
                   imgPath={arrayProfileFilter[0].imgPath}
                   name={arrayProfileFilter[0].name}
                   status={arrayProfileFilter[0].status}
-                  onPage="AdminManageVediosAndFoodPage"
+                  onPage="TrainerManageVideosAndFoodPage"
                   imgPosition={arrayProfileFilter[0].imgPosition}
                 />
               </div>
@@ -171,13 +192,14 @@ function AdminManageVediosAndFoodPage() {
                 </div>
                 <div
                   className="vedios-schedule"
-                  style={{ display: (scheduleType === "Vedio" && valueOfContentInscheduleSelect !== 'none') ? "" : "none" }}
+                  style={{ display: (scheduleType === "Vedio" && valueOfContentInscheduleSelect !== 'none' && arrFillterOfValueSelect[0][
+                    valueOfContentInscheduleSelect
+                  ].length !== 0) ? "" : "none" }}
                 >
                   <table>
                     <tr>
                       <th>Name</th>
                       <th>Link Youtube</th>
-                      <th colSpan="2">Edit/Add/Del</th>
                     </tr>
                     {scheduleType === "Vedio"
                       ? arrFillterOfValueSelect[0][
@@ -187,35 +209,10 @@ function AdminManageVediosAndFoodPage() {
                             <tr>
                               <td>{item.name}</td>
                               <td>{item.link}</td>
-                              <td>
-                                <button>Edit</button>
-                              </td>
-                              <td>
-                                <button>Del</button>
-                              </td>
                             </tr>
                           );
                         })
                       : []}
-                    <tr>
-                      <td>
-                        <input
-                          type="text"
-                          name="exercisename"
-                          id="exercisename"
-                        />
-                      </td>
-                      <td>
-                        <input
-                          type="text"
-                          name="youtubelink"
-                          id="youtubelink"
-                        />
-                      </td>
-                      <td colSpan="2">
-                        <button className="btn-add">Add</button>
-                      </td>
-                    </tr>
                   </table>
                 </div>
                 <div
@@ -226,7 +223,7 @@ function AdminManageVediosAndFoodPage() {
                     valueOfContentInScheduleSelect
                   ].map((item, index) => {
                     return (
-                      <div className="row-img-and-add-del-img-button">
+                      <div className="row-img">
                         <img
                           src={item}
                           alt={`path-${index}`}
@@ -234,27 +231,9 @@ function AdminManageVediosAndFoodPage() {
                             display: item.length === 0 ? "none" : "",
                           }}
                         />
-                        <div
-                          className="del-img"
-                          style={{
-                            display: item.length === 0 ? "none" : "",
-                          }}
-                        >
-                          <div className="del-button">
-                            <button id={`del-index-${index}`}>Delete Image</button>
-                          </div>
-                        </div>
                       </div>
                     );
                   })}
-                  <div className="add-button"
-                  style={{
-                    display:valueOfContentInScheduleSelect === 'none'?'none':''
-                  }}
-                  >
-                    <input type="file" name="addimage" id="addimage" />
-                    <button type="submit">Add</button>
-                  </div>
                 </div>
               </div>
             </div>
@@ -267,4 +246,4 @@ function AdminManageVediosAndFoodPage() {
   );
 }
 
-export default AdminManageVediosAndFoodPage;
+export default TrainerManageVideosAndFoodPage

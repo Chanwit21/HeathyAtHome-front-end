@@ -17,6 +17,10 @@ input {
   padding-left: 1vw;
 }
 
+input[type='submit'] {
+  padding-left: 0;
+}
+
 input:focus {
   outline: none;
   box-shadow: 0 0 0 0.052083vw #2b90c4;
@@ -31,6 +35,18 @@ textarea {
 textarea:focus {
   outline: none;
   box-shadow: 0 0 0 0.052083vw #2b90c4;
+}
+
+select {
+  font-weight: 600;
+  font-size: 1.04166666666vw;
+  color: #000000;
+}
+
+option {
+  font-weight: 600;
+  font-size: 1.04166666666vw;
+  color: #000000;
 }
 
 select:focus {

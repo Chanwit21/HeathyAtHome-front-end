@@ -18,7 +18,7 @@ function ExpenseSummaryPage() {
                 <div className="summary-row">
                   <h1>Selected Program :</h1>
                   <div className="col-in-summary">
-                    <p>90 Days Program</p>
+                    <p>45 Days Program</p>
                   </div>
                 </div>
                 <div className="summary-row">

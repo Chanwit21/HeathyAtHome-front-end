@@ -11,7 +11,7 @@ function UserWorkoutSchedulePage() {
   const arrayColor = [
     {
       color: "white",
-      colorCode: "#ffffff",
+      colorCode: "#ADADAD",
       fontColor: "#000000",
       content: [
         "The gray pose focuses mainly on size.",
@@ -21,7 +21,7 @@ function UserWorkoutSchedulePage() {
     },
     {
       color: "white",
-      colorCode: "#ADADAD",
+      colorCode: "#ffffff",
       fontColor: "#000000",
       content: [
         "White posture emphasizes stamina and size.",

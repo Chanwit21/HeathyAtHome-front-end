@@ -24,10 +24,17 @@ function UserInprogressProgramPage() {
                 />
               </div>
               <div className="inprogress-course-enrolled-and-consult-trainer">
+              <Link to='/user-workout-schedule-page'
+              style={{
+                textDecoration:'none',
+                color:"#000"
+              }}
+              >
                 <UserInprogressProgramCardComponent
-                  ProgramName="90 Days Program"
+                  ProgramName="45 Days Program"
                   ContentInProgram="Suitable for people who want to change their shape in a short time."
                 />
+                </Link>
                 <div className="consult-trainner">
                   <Link to="/chat-page">
                     <UserConsultTrainerComponent

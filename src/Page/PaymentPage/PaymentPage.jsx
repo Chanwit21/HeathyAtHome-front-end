@@ -117,7 +117,7 @@ function PaymentPage() {
                       <h1>Detail</h1>
                       <div className="detail-row">
                           <h1>Selected Program</h1>
-                          <p>90 Day Program</p>
+                          <p>45 Day Program</p>
                       </div>
                       <div className="detail-row">
                           <h1>Name</h1>

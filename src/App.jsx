@@ -23,6 +23,9 @@ import VedioPage from "./Page/VedioPage/VedioPage";
 import AdminProfilePage from "./Page/AdminProfilePage/AdminProfilePage";
 import AdminManageVediosAndFoodPage from "./Page/AdminManageVediosAndFoodPage/AdminManageVediosAndFoodPage";
 import AdminCustomersPage from "./Page/AdminCustomersPage/AdminCustomersPage";
+import TrainerProfilePage from "./Page/TrainerProfilePage/TrainerProfilePage";
+import TrainerManageVideosAndFoodPage from "./Page/TrainerManageVideosAndFoodPage/TrainerManageVideosAndFoodPage";
+import TrainerCustomersPage from "./Page/TrainerCustomersPage/TrainerCustomersPage";
 
 function App() {
 
@@ -52,6 +55,9 @@ function App() {
           <Route path='/admin-profile-page' component={AdminProfilePage} />
           <Route path='/admin-manage-vedios-and-food-page' component={AdminManageVediosAndFoodPage} />
           <Route path='/admin-customers-page' component={AdminCustomersPage} />
+          <Route path='/trainer-profile-page' component={TrainerProfilePage} />
+          <Route path='/trainer-manage-vedios-and-food-page' component={TrainerManageVideosAndFoodPage} />
+          <Route path='/trainer-customers-page' component={TrainerCustomersPage} />
         </Switch>
       </BrowserRouter>
     </div>

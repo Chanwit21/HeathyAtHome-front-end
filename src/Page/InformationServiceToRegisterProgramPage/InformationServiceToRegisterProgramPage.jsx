@@ -16,7 +16,7 @@ function InformationServiceToRegisterProgramPage() {
             <div className="service-card">
               <div className="img"></div>
               <div className="text-in-card">
-                <p>90 Days Program</p>
+                <p>45 Days Program</p>
               </div>
             </div>
           </div>
