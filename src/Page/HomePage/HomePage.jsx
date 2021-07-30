@@ -60,19 +60,23 @@ function HomePage() {
             <div className="trainer-text">
               <h1>Trainer</h1>
             </div>
-            <Link to='/trainerpage' style={{textDecoration:"none",color:"black"}}>
-            <div className="trainer-card-row">
-              <TrainerCardComponent 
-              pathOfImg = './PIC/Trainer/pexels-andrew-dick-733500.jpg'
-              nickName = "Trainer Ball"
-              Fullname = "Suthep Prabkeaw"
-              />
-              <TrainerCardComponent 
-              pathOfImg = './PIC/Trainer/pexels-thisisengineering-3912944.jpg'
-              nickName = "Trainer Job"
-              Fullname = "Thanapob SingHaseanee"
-              />
-            </div></Link>
+            <Link
+              to="/trainerpage"
+              style={{ textDecoration: "none", color: "black" }}
+            >
+              <div className="trainer-card-row">
+                <TrainerCardComponent
+                  pathOfImg="./PIC/Trainer/pexels-andrew-dick-733500.jpg"
+                  nickName="Trainer Ball"
+                  Fullname="Suthep Prabkeaw"
+                />
+                <TrainerCardComponent
+                  pathOfImg="./PIC/Trainer/pexels-thisisengineering-3912944.jpg"
+                  nickName="Trainer Job"
+                  Fullname="Thanapob SingHaseanee"
+                />
+              </div>
+            </Link>
           </div>
         </section>
         <section className="contact-us">
@@ -84,7 +88,7 @@ function HomePage() {
       </div>
       {/* Space Bottom */}
       <div style={{ marginBottom: "2.083333333333333vw" }}></div>
-        <FooterComponent />
+      <FooterComponent />
     </div>
   );
 }
