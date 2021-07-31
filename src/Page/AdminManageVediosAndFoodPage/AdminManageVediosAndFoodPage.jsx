@@ -3,6 +3,10 @@ import FooterComponent from "../../Component/FooterComponent/FooterComponent";
 import NavBarLeftForAdminAndTrainerComponent from "../../Component/NavBarLeftForAdminAndTrainerComponent/NavBarLeftForAdminAndTrainerComponent";
 import NavComponent from "../../Component/NavComponent/NavComponent";
 import "./AdminManageVediosAndFoodPage.css";
+import avatarImg from "../../PIC/Icon/user.png";
+import preWorkoutTable1 from "../../PIC/FoodTable/PRE-WORKOUT-MEAL.jpg";
+import postWorkoutTable1 from "../../PIC/FoodTable/POST-WORKOUT-MEAL.jpg";
+import lope from "../../PIC/Icon/loupe.png";
 
 function AdminManageVediosAndFoodPage() {
   const [scheduleType, setScheduleType] = useState("none");
@@ -12,7 +16,7 @@ function AdminManageVediosAndFoodPage() {
     {
       name: "Chanwit Pansila",
       status: "Admin",
-      imgPath: "./PIC/Icon/user.png",
+      imgPath: avatarImg,
       imgPosition: "0 0",
       contents: [
         { "col-left": "Phone Number", "col-right": "089-697-xxx" },
@@ -36,7 +40,7 @@ function AdminManageVediosAndFoodPage() {
     },
   ];
   const arrayProfileFilter = arrayProfileContents.filter(
-    (item) => item.name === "Chanwit Pansila"
+    item => item.name === "Chanwit Pansila"
   );
   // console.log(arrayProfileFilter)
   const dataVedioAndFood = [
@@ -82,10 +86,8 @@ function AdminManageVediosAndFoodPage() {
         "Snack",
       ],
       none: [],
-      "Pre Work Out": [
-        "./PIC/FoodTable/PRE-WORKOUT-MEAL.jpg"
-      ],
-      "Post Work Out": ["./PIC/FoodTable/POST-WORKOUT-MEAL.jpg"],
+      "Pre Work Out": [preWorkoutTable1],
+      "Post Work Out": [postWorkoutTable1],
       "Normal Meal": [],
       Snack: [],
     },
@@ -95,9 +97,7 @@ function AdminManageVediosAndFoodPage() {
   const arrFillterOfValueSelect =
     scheduleType === "none"
       ? [{ typeOfContentInSchedule: [], none: [] }]
-      : dataVedioAndFood.filter(
-          (item) => item.typeOfSchedule === valueInSelect
-        );
+      : dataVedioAndFood.filter(item => item.typeOfSchedule === valueInSelect);
   // console.log(arrFillterOfValueSelect)
 
   // set Type of Schedule
@@ -136,7 +136,7 @@ function AdminManageVediosAndFoodPage() {
                     <select
                       name="typeOfSchedule"
                       id="type-of-schedule"
-                      onChange={(e) => changeTypeOfSchedule(e)}
+                      onChange={e => changeTypeOfSchedule(e)}
                     >
                       <option value="none">none</option>
                       <option value="Vedio">Vedio</option>
@@ -145,12 +145,12 @@ function AdminManageVediosAndFoodPage() {
                     <select
                       name="typeOfSchedule"
                       id="type-of-content-in-schedule"
-                      onChange={(e) => changeValueOfContentInScheduleSelect(e)}
+                      onChange={e => changeValueOfContentInScheduleSelect(e)}
                       value={valueOfContentInScheduleSelect}
                     >
                       <option value="none">none</option>
                       {arrFillterOfValueSelect[0].typeOfContentInSchedule.map(
-                        (item) => (
+                        item => (
                           <option value={item}>{item}</option>
                         )
                       )}
@@ -165,14 +165,20 @@ function AdminManageVediosAndFoodPage() {
                         placeholder="Search..."
                       />
                       <button type="submit">
-                        <img src="./PIC/Icon/loupe.png" alt="loupe" />
+                        <img src={lope} alt="loupe" />
                       </button>
                     </form>
                   </div>
                 </div>
                 <div
                   className="vedios-schedule"
-                  style={{ display: (scheduleType === "Vedio" && valueOfContentInscheduleSelect !== 'none') ? "" : "none" }}
+                  style={{
+                    display:
+                      scheduleType === "Vedio" &&
+                      valueOfContentInscheduleSelect !== "none"
+                        ? ""
+                        : "none",
+                  }}
                 >
                   <table>
                     <tr>
@@ -183,7 +189,7 @@ function AdminManageVediosAndFoodPage() {
                     {scheduleType === "Vedio"
                       ? arrFillterOfValueSelect[0][
                           valueOfContentInscheduleSelect
-                        ].map((item) => {
+                        ].map(item => {
                           return (
                             <tr>
                               <td>{item.name}</td>
@@ -242,16 +248,20 @@ function AdminManageVediosAndFoodPage() {
                           }}
                         >
                           <div className="del-button">
-                            <button id={`del-index-${index}`}>Delete Image</button>
+                            <button id={`del-index-${index}`}>
+                              Delete Image
+                            </button>
                           </div>
                         </div>
                       </div>
                     );
                   })}
-                  <div className="add-button"
-                  style={{
-                    display:valueOfContentInScheduleSelect === 'none'?'none':''
-                  }}
+                  <div
+                    className="add-button"
+                    style={{
+                      display:
+                        valueOfContentInScheduleSelect === "none" ? "none" : "",
+                    }}
                   >
                     <input type="file" name="addimage" id="addimage" />
                     <button type="submit">Add</button>

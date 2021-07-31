@@ -9,18 +9,37 @@ function NavBarLeftForUserComponent(props) {
         <div className="img-user"></div>
         <h1>{props.Name}</h1>
         <div className="link-to-anatherpage-function">
-          <Link 
-          to="/user-profile-page" 
-          className={props.Page === 'UserProfilePage' ? 'onPage' : ''} 
-          style={{color:props.Page === 'UserProfilePage' ? '#000000FF' : ''}}>Profile</Link>
-          <Link 
-          to="/inprogressprogrampage" 
-          className={props.Page === 'UserInprogressProgramPage' ? 'onPage' : ''} 
-          style={{color:props.Page === 'UserInprogressProgramPage' ? '#000000FF' : ''}}>Inprogress program</Link>
-          <Link to="#" 
-          className={props.Page === 'UserSettingPage' ? 'onPage' : ''} 
-          style={{color:props.Page === 'UserSettingPage' ? '#000000FF' : ''}} >Setting</Link>
-          <button>Log out</button>
+          <Link
+            to="/user-profile-page"
+            className={props.Page === "UserProfilePage" ? "onPage" : ""}
+            style={{
+              color: props.Page === "UserProfilePage" ? "#000000FF" : "",
+            }}
+          >
+            Profile
+          </Link>
+          <Link
+            to="/inprogressprogrampage"
+            className={
+              props.Page === "UserInprogressProgramPage" ? "onPage" : ""
+            }
+            style={{
+              color:
+                props.Page === "UserInprogressProgramPage" ? "#000000FF" : "",
+            }}
+          >
+            Inprogress program
+          </Link>
+          <Link
+            to="#"
+            className={props.Page === "UserSettingPage" ? "onPage" : ""}
+            style={{
+              color: props.Page === "UserSettingPage" ? "#000000FF" : "",
+            }}
+          >
+            Setting
+          </Link>
+          <button className="btn btn-log-out">Log out</button>
         </div>
       </div>
     </div>

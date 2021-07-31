@@ -7,6 +7,7 @@ import UserInprogressProgramCardComponent from "../../Component/UserInprogressPr
 import "./UserInprogressProgramPage.css";
 import { Link } from "react-router-dom";
 import UserConsultTrainerComponent from "../../Component/UserConsultTrainerComponent/UserConsultTrainerComponent";
+import trainerThisIsEngineering from "../../PIC/Trainer/pexels-thisisengineering-3912944.jpg";
 
 function UserInprogressProgramPage() {
   return (
@@ -24,21 +25,22 @@ function UserInprogressProgramPage() {
                 />
               </div>
               <div className="inprogress-course-enrolled-and-consult-trainer">
-              <Link to='/user-workout-schedule-page'
-              style={{
-                textDecoration:'none',
-                color:"#000"
-              }}
-              >
-                <UserInprogressProgramCardComponent
-                  ProgramName="45 Days Program"
-                  ContentInProgram="Suitable for people who want to change their shape in a short time."
-                />
+                <Link
+                  to="/user-workout-schedule-page"
+                  style={{
+                    textDecoration: "none",
+                    color: "#000",
+                  }}
+                >
+                  <UserInprogressProgramCardComponent
+                    ProgramName="45 Days Program"
+                    ContentInProgram="Suitable for people who want to change their shape in a short time."
+                  />
                 </Link>
                 <div className="consult-trainner">
                   <Link to="/chat-page">
                     <UserConsultTrainerComponent
-                      pathOfImg="../PIC/Trainer/pexels-thisisengineering-3912944.jpg"
+                      pathOfImg={trainerThisIsEngineering}
                       nickName="Trainer Job"
                       Fullname="Thanapob SingHaseanee"
                     />

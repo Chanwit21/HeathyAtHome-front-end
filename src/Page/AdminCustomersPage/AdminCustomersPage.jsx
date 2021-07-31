@@ -3,13 +3,15 @@ import FooterComponent from "../../Component/FooterComponent/FooterComponent";
 import NavBarLeftForAdminAndTrainerComponent from "../../Component/NavBarLeftForAdminAndTrainerComponent/NavBarLeftForAdminAndTrainerComponent";
 import NavComponent from "../../Component/NavComponent/NavComponent";
 import "./AdminCustomersPage.css";
+import avatarImg from "../../PIC/Icon/user.png";
+import trainerImgAndrewDick from "../../PIC/Trainer/pexels-andrew-dick-733500.jpg";
 
 function AdminCustomersPage() {
   const arrayProfileContents = [
     {
       name: "Chanwit Pansila",
       status: "Admin",
-      imgPath: "./PIC/Icon/user.png",
+      imgPath: avatarImg,
       imgPosition: "0 0",
       contents: [
         { "col-left": "Phone Number", "col-right": "089-697-xxx" },
@@ -33,33 +35,33 @@ function AdminCustomersPage() {
     },
   ];
   const arrayProfileFilter = arrayProfileContents.filter(
-    (item) => item.name === "Chanwit Pansila"
+    item => item.name === "Chanwit Pansila"
   );
   // console.log(arrayProfileFilter)
   const arrayOfCustomersList = [
     {
       name: "Wuttichai Chankracang",
-      imgPathOfCustomer: "./PIC/Icon/user.png",
+      imgPathOfCustomer: avatarImg,
       imgCustomerPosition: "0 0",
       status: "During The Program",
       course: "45 day program.",
       personalTrainer: "Thanapob SingHaseanee",
-      imgPathOfPersonalTrainer: "./PIC/Trainer/pexels-andrew-dick-733500.jpg",
+      imgPathOfPersonalTrainer: trainerImgAndrewDick,
       imgTrainerPosition: "0 0",
     },
     {
       name: "Boontham Saraboon",
-      imgPathOfCustomer: "./PIC/Icon/user.png",
+      imgPathOfCustomer: avatarImg,
       imgCustomerPosition: "0 0",
       status: "During The Program",
       course: "3 month program.",
       personalTrainer: "Suthep Prabkeaw",
-      imgPathOfPersonalTrainer: "./PIC/Icon/user.png",
+      imgPathOfPersonalTrainer: avatarImg,
       imgTrainerPosition: "0 0",
     },
     {
       name: "Komchan Github",
-      imgPathOfCustomer: "./PIC/Icon/user.png",
+      imgPathOfCustomer: avatarImg,
       imgCustomerPosition: "0 0",
       status: "Pending payment",
       course: "45 day program.",
@@ -69,12 +71,12 @@ function AdminCustomersPage() {
     },
     {
       name: "Facetime HaHa",
-      imgPathOfCustomer: "./PIC/Icon/user.png",
+      imgPathOfCustomer: avatarImg,
       imgCustomerPosition: "0 0",
       status: "Successful payment Start Date  14/07/2021",
       course: "45 day program.",
       personalTrainer: "Suthep Prabkeaw",
-      imgPathOfPersonalTrainer: "./PIC/Icon/user.png",
+      imgPathOfPersonalTrainer: avatarImg,
       imgTrainerPosition: "0 0",
     },
   ];
@@ -104,7 +106,7 @@ function AdminCustomersPage() {
                     <th>Course</th>
                     <th>Personal Trainer</th>
                   </tr>
-                  {arrayOfCustomersList.map((item) => {
+                  {arrayOfCustomersList.map(item => {
                     return (
                       <tr>
                         <td>
@@ -112,8 +114,9 @@ function AdminCustomersPage() {
                             src={item.imgPathOfCustomer}
                             alt={`img-${item.name}`}
                             style={{
-                                display:item.imgPathOfCustomer === ''?'none':''
-                              }}
+                              display:
+                                item.imgPathOfCustomer === "" ? "none" : "",
+                            }}
                           />
                           {item.name}
                         </td>
@@ -125,7 +128,10 @@ function AdminCustomersPage() {
                             alt={`img-${item.personalTrainer}`}
                             style={{
                               objectPosition: item.imgTrainerPosition,
-                              display:item.imgPathOfPersonalTrainer === ''?'none':''
+                              display:
+                                item.imgPathOfPersonalTrainer === ""
+                                  ? "none"
+                                  : "",
                             }}
                           />
                           {item.personalTrainer}

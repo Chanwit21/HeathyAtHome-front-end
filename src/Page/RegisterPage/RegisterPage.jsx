@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import FooterComponent from "../../Component/FooterComponent/FooterComponent";
 import NavComponent from "../../Component/NavComponent/NavComponent";
 import "./RegisterPage.css";
+import h_Logo from "../../PIC/LOGO/h.png";
+import healthyAtHomeLogo from "../../PIC/LOGO/He__2_-removebg-preview.png";
 
 function RegisterPage() {
   return (
@@ -16,11 +18,8 @@ function RegisterPage() {
               <div className="row-head-of-form">
                 <h1>Create Your Account</h1>
                 <div className="logo">
-                  <img src="./PIC/LOGO/h.png" alt="H-LOGO" />
-                  <img
-                    src="./PIC\LOGO\He__2_-removebg-preview.png"
-                    alt="H-LOGO"
-                  />
+                  <img src={h_Logo} alt="H-LOGO" />
+                  <img src={healthyAtHomeLogo} alt="H-LOGO" />
                 </div>
               </div>
               <form action="#">

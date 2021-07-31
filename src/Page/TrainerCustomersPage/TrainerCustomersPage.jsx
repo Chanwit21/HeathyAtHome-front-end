@@ -3,13 +3,16 @@ import FooterComponent from "../../Component/FooterComponent/FooterComponent";
 import NavBarLeftForAdminAndTrainerComponent from "../../Component/NavBarLeftForAdminAndTrainerComponent/NavBarLeftForAdminAndTrainerComponent";
 import NavComponent from "../../Component/NavComponent/NavComponent";
 import "./TrainerCustomersPage.css";
+import avatarImg from "../../PIC/Icon/user.png";
+import trainerImgAndrewDick from "../../PIC/Trainer/pexels-andrew-dick-733500.jpg";
+import trainerThisIsEngineer from "../../PIC/Trainer/pexels-thisisengineering-3912944.jpg";
 
 function TrainerCustomersPage() {
   const arrayProfileContents = [
     {
       name: "Chanwit Pansila",
       status: "Admin",
-      imgPath: "./PIC/Icon/user.png",
+      imgPath: avatarImg,
       imgPosition: "0 0",
       contents: [
         { "col-left": "Phone Number", "col-right": "089-697-xxx" },
@@ -30,7 +33,7 @@ function TrainerCustomersPage() {
     {
       name: "Thanapob SingHaseanee",
       status: "Trainer",
-      imgPath: "./PIC/Trainer/pexels-thisisengineering-3912944.jpg",
+      imgPath: trainerThisIsEngineer,
       imgPosition: "0 0",
       contents: [
         { "col-left": "Phone Number", "col-right": "089-697-xxx" },
@@ -55,33 +58,33 @@ function TrainerCustomersPage() {
     },
   ];
   const arrayProfileFilter = arrayProfileContents.filter(
-    (item) => item.name === "Thanapob SingHaseanee"
+    item => item.name === "Thanapob SingHaseanee"
   );
   // console.log(arrayProfileFilter)
   const arrayOfCustomersList = [
     {
       name: "Wuttichai Chankracang",
-      imgPathOfCustomer: "./PIC/Icon/user.png",
+      imgPathOfCustomer: avatarImg,
       imgCustomerPosition: "0 0",
       status: "During The Program",
       course: "45 day program.",
       personalTrainer: "Thanapob SingHaseanee",
-      imgPathOfPersonalTrainer: "./PIC/Trainer/pexels-andrew-dick-733500.jpg",
+      imgPathOfPersonalTrainer: trainerImgAndrewDick,
       imgTrainerPosition: "0 0",
     },
     {
       name: "Boontham Saraboon",
-      imgPathOfCustomer: "./PIC/Icon/user.png",
+      imgPathOfCustomer: avatarImg,
       imgCustomerPosition: "0 0",
       status: "During The Program",
       course: "3 month program.",
       personalTrainer: "Suthep Prabkeaw",
-      imgPathOfPersonalTrainer: "./PIC/Icon/user.png",
+      imgPathOfPersonalTrainer: avatarImg,
       imgTrainerPosition: "0 0",
     },
     {
       name: "Komchan Github",
-      imgPathOfCustomer: "./PIC/Icon/user.png",
+      imgPathOfCustomer: avatarImg,
       imgCustomerPosition: "0 0",
       status: "Pending payment",
       course: "45 day program.",
@@ -91,12 +94,12 @@ function TrainerCustomersPage() {
     },
     {
       name: "Facetime HaHa",
-      imgPathOfCustomer: "./PIC/Icon/user.png",
+      imgPathOfCustomer: avatarImg,
       imgCustomerPosition: "0 0",
       status: "Successful payment Start Date  14/07/2021",
       course: "45 day program.",
       personalTrainer: "Suthep Prabkeaw",
-      imgPathOfPersonalTrainer: "./PIC/Icon/user.png",
+      imgPathOfPersonalTrainer: avatarImg,
       imgTrainerPosition: "0 0",
     },
   ];
@@ -130,17 +133,13 @@ function TrainerCustomersPage() {
       color: "pink",
       colorCode: "#FF88A4",
       fontColor: "#FFF",
-      content: [
-        "Pink Is Rest Day",
-      ],
+      content: ["Pink Is Rest Day"],
     },
     {
       color: "yellow",
       colorCode: "#DCDF52",
       fontColor: "#FFF",
-      content: [
-        "Yellow is cardio Day.",
-      ],
+      content: ["Yellow is cardio Day."],
     },
   ];
   const [customer, setCustomer] = useState("none");
@@ -153,11 +152,13 @@ function TrainerCustomersPage() {
   function selectCustomer(e) {
     let change = e.target.value;
     const objOfCutomer = arrayOfCustomersList.find(
-      (element) => element.name === change
+      element => element.name === change
     );
     // console.log(objOfCutomer)
     setdetailsCustomer(objOfCutomer ? objOfCutomer : {});
     setCourse(objOfCutomer ? objOfCutomer.course : "");
+    setTypeOfSchedule("");
+    setDay("");
     setCustomer(e.target.value);
     setArrayDay(
       createArrayOfDays(
@@ -226,7 +227,7 @@ function TrainerCustomersPage() {
                     onChange={selectCustomer}
                   >
                     <option value="none">none</option>
-                    {arrayOfCustomersList.map((item) => {
+                    {arrayOfCustomersList.map(item => {
                       return <option value={item.name}>{item.name}</option>;
                     })}
                   </select>
@@ -234,6 +235,7 @@ function TrainerCustomersPage() {
                     name="type-of-schedule"
                     id="type-of-schedule"
                     onChange={selectSchedule}
+                    value={typeOfSchedule}
                   >
                     <option value="none">none</option>
                     <option value="Food">Food</option>
@@ -243,9 +245,10 @@ function TrainerCustomersPage() {
                     name="day-of-schedule"
                     id="day-of-schedule"
                     onChange={selectDay}
+                    value={day}
                   >
                     <option value="none">none</option>
-                    {arrayDay.map((item) => {
+                    {arrayDay.map(item => {
                       if (typeOfSchedule !== "none") {
                         return (
                           <option value={`Day${item}`}>{`Day${item}`}</option>
@@ -347,7 +350,7 @@ function TrainerCustomersPage() {
                         <th>Name</th>
                         <th>Link Youtube</th>
                       </tr>
-                      {[1, 2, 3, 4, 5, 6, 7].map((item) => {
+                      {[1, 2, 3, 4, 5, 6, 7].map(item => {
                         return (
                           <tr>
                             <td>{item}</td>
@@ -416,7 +419,7 @@ function TrainerCustomersPage() {
                       <th colSpan="3">Reps x Setss</th>
                       <th colSpan="2">Break period</th>
                     </tr>
-                    {arrayColor.map((element) => {
+                    {arrayColor.map(element => {
                       let count = 4;
                       return (
                         <tr
@@ -424,18 +427,13 @@ function TrainerCustomersPage() {
                             backgroundColor: element.colorCode,
                             color: element.fontColor,
                           }}
-                          >
-                          {element.content.map((item) => {
-                            if(element.content.length === 1 ){
-                              return (
-                                <th colSpan='9'>{item}</th>
-                              );
+                        >
+                          {element.content.map(item => {
+                            if (element.content.length === 1) {
+                              return <th colSpan="9">{item}</th>;
                             }
-                            return (
-                              <th colSpan={count--}>{item}</th>
-                            );
-                          }
-                          )}
+                            return <th colSpan={count--}>{item}</th>;
+                          })}
                         </tr>
                       );
                     })}

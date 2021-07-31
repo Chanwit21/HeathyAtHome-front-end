@@ -6,6 +6,7 @@ import NavComponent from "../../Component/NavComponent/NavComponent";
 import UserConsultTrainerComponent from "../../Component/UserConsultTrainerComponent/UserConsultTrainerComponent";
 import { Link } from "react-router-dom";
 import "./UserWorkoutSchedulePage.css";
+import trainerThisIsEngineering from "../../PIC/Trainer/pexels-thisisengineering-3912944.jpg";
 
 function UserWorkoutSchedulePage() {
   const arrayColor = [
@@ -244,7 +245,7 @@ function UserWorkoutSchedulePage() {
                     <th colSpan="3">Reps x Setss</th>
                     <th colSpan="2">Break period</th>
                   </tr>
-                  {arrayColor.map((element) => {
+                  {arrayColor.map(element => {
                     return (
                       <tr
                         style={{
@@ -259,7 +260,7 @@ function UserWorkoutSchedulePage() {
                     );
                   })}
 
-                  {arrWorkOutPrograms.map((element) => {
+                  {arrWorkOutPrograms.map(element => {
                     if (element.exercise.length === 1) {
                       if (element.exercise[0].exerciseName === "Rest") {
                         return (
@@ -341,19 +342,23 @@ function UserWorkoutSchedulePage() {
                         >
                           {element.day}
                         </td>
-                        {element.exercise.map((item) =>{ return (<td
-                          style={{
-                            backgroundColor: item.colorCode,
-                          }}
-                        >
-                          <a
-                            target="_blank"
-                            href={item.Link}
-                            style={{ color: item.color }}
-                          >
-                            {item.exerciseName}
-                          </a>
-                        </td>)} )}
+                        {element.exercise.map(item => {
+                          return (
+                            <td
+                              style={{
+                                backgroundColor: item.colorCode,
+                              }}
+                            >
+                              <a
+                                target="_blank"
+                                href={item.Link}
+                                style={{ color: item.color }}
+                              >
+                                {item.exerciseName}
+                              </a>
+                            </td>
+                          );
+                        })}
                         <td
                           colSpan="1"
                           style={{ backgroundColor: "#FFFFFF" }}
@@ -404,7 +409,7 @@ function UserWorkoutSchedulePage() {
                         </div>
                       </div>
                       <div className="submit-form">
-                          <input type="submit" value="Submit" />
+                        <input type="submit" value="Submit" />
                       </div>
                     </form>
                   </div>
@@ -412,7 +417,7 @@ function UserWorkoutSchedulePage() {
                 <div className="consult-trainner">
                   <Link to="/chat-page">
                     <UserConsultTrainerComponent
-                      pathOfImg="../PIC/Trainer/pexels-thisisengineering-3912944.jpg"
+                      pathOfImg={trainerThisIsEngineering}
                       nickName="Trainer Job"
                       Fullname="Thanapob SingHaseanee"
                     />

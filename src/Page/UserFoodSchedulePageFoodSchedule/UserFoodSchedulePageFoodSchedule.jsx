@@ -6,6 +6,7 @@ import "./UserFoodSchedulePageFoodSchedule.css";
 import ContactUsComponent from "../../Component/ContactUsComponent/ContactUsComponent";
 import UserConsultTrainerComponent from "../../Component/UserConsultTrainerComponent/UserConsultTrainerComponent";
 import MenuBarComponent from "../../Component/MenuBarComponent/MenuBarComponent";
+import trainerThisIsEngineering from "../../PIC/Trainer/pexels-thisisengineering-3912944.jpg";
 
 function UserFoodSchedulePageFoodSchedule() {
   const arrayOfFoodSchedle = [
@@ -76,7 +77,7 @@ function UserFoodSchedulePageFoodSchedule() {
       ],
     },
   ];
-  const arrayOfDay = ["none",...arrayOfFoodSchedle.map((item) => item.day)];
+  const arrayOfDay = ["none", ...arrayOfFoodSchedle.map(item => item.day)];
   const onDay = "Day1";
 
   return (
@@ -97,12 +98,12 @@ function UserFoodSchedulePageFoodSchedule() {
                 <h1>Food schedule</h1>
                 <form action="#">
                   <select name="filterDay" id="day">
-                    {arrayOfDay.map((item) => {
+                    {arrayOfDay.map(item => {
                       return <option value={item}>{item}</option>;
                     })}
                   </select>
                 </form>
-                {arrayOfFoodSchedle.map((item) => {
+                {arrayOfFoodSchedle.map(item => {
                   if (item.day === onDay) {
                     return (
                       <table id="food-schedule-table">
@@ -146,7 +147,7 @@ function UserFoodSchedulePageFoodSchedule() {
                             {"Upload Picture"}
                           </th>
                         </tr>
-                        {item.content.map((itemInside) => {
+                        {item.content.map(itemInside => {
                           if (itemInside.time === "Work Out") {
                             return (
                               <tr>
@@ -190,7 +191,7 @@ function UserFoodSchedulePageFoodSchedule() {
               <div className="consult-trainer">
                 <Link to="/chatpage">
                   <UserConsultTrainerComponent
-                    pathOfImg="../PIC/Trainer/pexels-thisisengineering-3912944.jpg"
+                    pathOfImg={trainerThisIsEngineering}
                     nickName="Trainer Job"
                     Fullname="Thanapob SingHaseanee"
                   />

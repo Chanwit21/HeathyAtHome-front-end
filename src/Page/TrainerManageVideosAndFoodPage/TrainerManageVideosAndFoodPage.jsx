@@ -3,6 +3,11 @@ import FooterComponent from "../../Component/FooterComponent/FooterComponent";
 import NavBarLeftForAdminAndTrainerComponent from "../../Component/NavBarLeftForAdminAndTrainerComponent/NavBarLeftForAdminAndTrainerComponent";
 import NavComponent from "../../Component/NavComponent/NavComponent";
 import "./TrainerManageVideosAndFoodPage.css";
+import avatarImg from "../../PIC/Icon/user.png";
+import trainerThisIsEngineering from "../../PIC/Trainer/pexels-thisisengineering-3912944.jpg";
+import preWorkoutTable1 from "../../PIC/FoodTable/PRE-WORKOUT-MEAL.jpg";
+import postWorkoutTable1 from "../../PIC/FoodTable/POST-WORKOUT-MEAL.jpg";
+import lope from "../../PIC/Icon/loupe.png";
 
 function TrainerManageVideosAndFoodPage() {
   const [scheduleType, setScheduleType] = useState("none");
@@ -12,7 +17,7 @@ function TrainerManageVideosAndFoodPage() {
     {
       name: "Chanwit Pansila",
       status: "Admin",
-      imgPath: "./PIC/Icon/user.png",
+      imgPath: avatarImg,
       imgPosition: "0 0",
       contents: [
         { "col-left": "Phone Number", "col-right": "089-697-xxx" },
@@ -31,33 +36,34 @@ function TrainerManageVideosAndFoodPage() {
       ],
     },
     {
-        name: "Thanapob SingHaseanee",
-        status: "Trainer",
-        imgPath: "./PIC/Trainer/pexels-thisisengineering-3912944.jpg",
-        imgPosition: "0 0",
-        contents: [
-          { "col-left": "Phone Number", "col-right": "089-697-xxx" },
-          {
-            "col-left": "Gender",
-            "col-right": "Male",
-          },
-          {
-            "col-left": "Weight",
-            "col-right": "63 kg.",
-          },
-          {
-            "col-left": "Heigth",
-            "col-right": "171 cm.",
-          },
-          {
-            "col-left": "Education",
-            "col-right": "Faculty of Physical Education Srinakharinwirot university.",
-          },
-        ],
+      name: "Thanapob SingHaseanee",
+      status: "Trainer",
+      imgPath: trainerThisIsEngineering,
+      imgPosition: "0 0",
+      contents: [
+        { "col-left": "Phone Number", "col-right": "089-697-xxx" },
+        {
+          "col-left": "Gender",
+          "col-right": "Male",
+        },
+        {
+          "col-left": "Weight",
+          "col-right": "63 kg.",
+        },
+        {
+          "col-left": "Heigth",
+          "col-right": "171 cm.",
+        },
+        {
+          "col-left": "Education",
+          "col-right":
+            "Faculty of Physical Education Srinakharinwirot university.",
+        },
+      ],
     },
   ];
   const arrayProfileFilter = arrayProfileContents.filter(
-    (item) => item.name === "Thanapob SingHaseanee"
+    item => item.name === "Thanapob SingHaseanee"
   );
   // console.log(arrayProfileFilter)
   const dataVedioAndFood = [
@@ -103,10 +109,8 @@ function TrainerManageVideosAndFoodPage() {
         "Snack",
       ],
       none: [],
-      "Pre Work Out": [
-        "./PIC/FoodTable/PRE-WORKOUT-MEAL.jpg"
-      ],
-      "Post Work Out": ["./PIC/FoodTable/POST-WORKOUT-MEAL.jpg"],
+      "Pre Work Out": [preWorkoutTable1],
+      "Post Work Out": [postWorkoutTable1],
       "Normal Meal": [],
       Snack: [],
     },
@@ -116,9 +120,7 @@ function TrainerManageVideosAndFoodPage() {
   const arrFillterOfValueSelect =
     scheduleType === "none"
       ? [{ typeOfContentInSchedule: [], none: [] }]
-      : dataVedioAndFood.filter(
-          (item) => item.typeOfSchedule === valueInSelect
-        );
+      : dataVedioAndFood.filter(item => item.typeOfSchedule === valueInSelect);
   // console.log(arrFillterOfValueSelect)
 
   // set Type of Schedule
@@ -157,7 +159,7 @@ function TrainerManageVideosAndFoodPage() {
                     <select
                       name="typeOfSchedule"
                       id="type-of-schedule"
-                      onChange={(e) => changeTypeOfSchedule(e)}
+                      onChange={e => changeTypeOfSchedule(e)}
                     >
                       <option value="none">none</option>
                       <option value="Vedio">Vedio</option>
@@ -166,12 +168,12 @@ function TrainerManageVideosAndFoodPage() {
                     <select
                       name="typeOfSchedule"
                       id="type-of-content-in-schedule"
-                      onChange={(e) => changeValueOfContentInScheduleSelect(e)}
+                      onChange={e => changeValueOfContentInScheduleSelect(e)}
                       value={valueOfContentInScheduleSelect}
                     >
                       <option value="none">none</option>
                       {arrFillterOfValueSelect[0].typeOfContentInSchedule.map(
-                        (item) => (
+                        item => (
                           <option value={item}>{item}</option>
                         )
                       )}
@@ -186,16 +188,22 @@ function TrainerManageVideosAndFoodPage() {
                         placeholder="Search..."
                       />
                       <button type="submit">
-                        <img src="./PIC/Icon/loupe.png" alt="loupe" />
+                        <img src={lope} alt="loupe" />
                       </button>
                     </form>
                   </div>
                 </div>
                 <div
                   className="vedios-schedule"
-                  style={{ display: (scheduleType === "Vedio" && valueOfContentInscheduleSelect !== 'none' && arrFillterOfValueSelect[0][
-                    valueOfContentInscheduleSelect
-                  ].length !== 0) ? "" : "none" }}
+                  style={{
+                    display:
+                      scheduleType === "Vedio" &&
+                      valueOfContentInscheduleSelect !== "none" &&
+                      arrFillterOfValueSelect[0][valueOfContentInscheduleSelect]
+                        .length !== 0
+                        ? ""
+                        : "none",
+                  }}
                 >
                   <table>
                     <tr>
@@ -205,7 +213,7 @@ function TrainerManageVideosAndFoodPage() {
                     {scheduleType === "Vedio"
                       ? arrFillterOfValueSelect[0][
                           valueOfContentInscheduleSelect
-                        ].map((item) => {
+                        ].map(item => {
                           return (
                             <tr>
                               <td>{item.name}</td>
@@ -247,4 +255,4 @@ function TrainerManageVideosAndFoodPage() {
   );
 }
 
-export default TrainerManageVideosAndFoodPage
+export default TrainerManageVideosAndFoodPage;

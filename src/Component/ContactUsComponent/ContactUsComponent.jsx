@@ -1,5 +1,10 @@
 import React from "react";
-import './ContactUsComponent.css'
+import "./ContactUsComponent.css";
+import twitter from "../../PIC/Icon/twitter.png";
+import facebook from "../../PIC/Icon/facebook.png";
+import instagram from "../../PIC/Icon/instagram.png";
+import h_Logo from "../../PIC/LOGO/h.png";
+import healthyAtHomeLogo from "../../PIC/LOGO/He__2_-removebg-preview.png";
 
 function ContactUsComponent() {
   return (
@@ -11,14 +16,14 @@ function ContactUsComponent() {
           <p>Line : @Fit@Home</p>
           <p>Email : FitAtHome@gmail.com</p>
           <div className="contact-us-img">
-            <img src="../PIC/Icon/twitter.png" alt="twitter" />
-            <img src="../PIC/Icon/facebook.png" alt="facebook" />
-            <img src="../PIC/Icon/instagram.png" alt="instagram" />
+            <img src={twitter} alt="twitter" />
+            <img src={facebook} alt="facebook" />
+            <img src={instagram} alt="instagram" />
           </div>
         </div>
         <div className="contact-us-form">
-          <img src="./PIC/LOGO/h.png" alt="H-LOGO" />
-          <img src="./PIC\LOGO\He__2_-removebg-preview.png" alt="H-LOGO" />
+          <img src={h_Logo} alt="H-LOGO" />
+          <img src={healthyAtHomeLogo} alt="H-LOGO" />
           <form action="#">
             <div className="label">
               <label htmlFor="firstname">Firstname : </label>

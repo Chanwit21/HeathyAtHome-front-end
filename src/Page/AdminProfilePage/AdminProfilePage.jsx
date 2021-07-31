@@ -3,13 +3,14 @@ import FooterComponent from "../../Component/FooterComponent/FooterComponent";
 import NavBarLeftForAdminAndTrainerComponent from "../../Component/NavBarLeftForAdminAndTrainerComponent/NavBarLeftForAdminAndTrainerComponent";
 import NavComponent from "../../Component/NavComponent/NavComponent";
 import "./AdminProfilePage.css";
+import avatarImg from "../../PIC/Icon/user.png";
 
 function AdminProfilePage() {
   const arrayProfileContents = [
     {
       name: "Chanwit Pansila",
       status: "Admin",
-      imgPath: "./PIC/Icon/user.png",
+      imgPath: avatarImg,
       imgPosition: "0 0",
       contents: [
         { "col-left": "Phone Number", "col-right": "089-697-xxx" },
@@ -33,7 +34,7 @@ function AdminProfilePage() {
     },
   ];
   const arrayFilter = arrayProfileContents.filter(
-    (item) => item.name === "Chanwit Pansila"
+    item => item.name === "Chanwit Pansila"
   );
 
   return (
@@ -62,7 +63,7 @@ function AdminProfilePage() {
                     <p>{arrayFilter[0].name}</p>
                   </div>
                 </div>
-                {arrayFilter[0].contents.map((item) => {
+                {arrayFilter[0].contents.map(item => {
                   return (
                     <div className="row-of-profile-content">
                       <div className="content-profile-content-left">

@@ -6,6 +6,7 @@ import NavComponent from "../../Component/NavComponent/NavComponent";
 import UserConsultTrainerComponent from "../../Component/UserConsultTrainerComponent/UserConsultTrainerComponent";
 import { Link } from "react-router-dom";
 import "./UserWeeklyUpdatePage.css";
+import trainerThisIsEngineering from "../../PIC/Trainer/pexels-thisisengineering-3912944.jpg";
 
 function UserWeeklyUpdatePage() {
   return (
@@ -21,7 +22,7 @@ function UserWeeklyUpdatePage() {
               </div>
               <div className="form-weekly-update">
                 <form action="#">
-                  <div className="row-of-content-in-form" id='first-of-row'>
+                  <div className="row-of-content-in-form" id="first-of-row">
                     <div className="content-left-or-top">
                       <label htmlFor="weight">Weight (kg.)</label>
                       <br />
@@ -126,7 +127,7 @@ function UserWeeklyUpdatePage() {
               <div className="consult-trainer">
                 <Link to="/chatpage">
                   <UserConsultTrainerComponent
-                    pathOfImg="../PIC/Trainer/pexels-thisisengineering-3912944.jpg"
+                    pathOfImg={trainerThisIsEngineering}
                     nickName="Trainer Job"
                     Fullname="Thanapob SingHaseanee"
                   />

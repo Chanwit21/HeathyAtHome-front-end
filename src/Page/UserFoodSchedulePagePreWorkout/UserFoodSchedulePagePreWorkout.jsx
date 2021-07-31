@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 import "./UserFoodSchedulePagePreWorkout.css";
 import ContactUsComponent from "../../Component/ContactUsComponent/ContactUsComponent";
 import UserConsultTrainerComponent from "../../Component/UserConsultTrainerComponent/UserConsultTrainerComponent";
+import trainerThisIsEngineering from "../../PIC/Trainer/pexels-thisisengineering-3912944.jpg";
+import preWorkoutImg from "../../PIC/FoodTable/PRE-WORKOUT-MEAL.jpg";
 
 function UserFoodSchedulePagePreWorkout() {
   return (
@@ -40,11 +42,11 @@ function UserFoodSchedulePagePreWorkout() {
           </div>
         </section>
         <section className="img-table">
-            <div className="container">
-                <div className="imgtable-row">
-                    <img src="../../../PIC/FoodTable/PRE-WORKOUT-MEAL.jpg" alt="PRE-WORKOUT-MEAL" />
-                </div>
+          <div className="container">
+            <div className="imgtable-row">
+              <img src={preWorkoutImg} alt="PRE-WORKOUT-MEAL" />
             </div>
+          </div>
         </section>
         <section className="consult-trainer">
           <div className="container">
@@ -52,7 +54,7 @@ function UserFoodSchedulePagePreWorkout() {
               <div className="consult-trainer">
                 <Link to="/chatpage">
                   <UserConsultTrainerComponent
-                    pathOfImg="../PIC/Trainer/pexels-thisisengineering-3912944.jpg"
+                    pathOfImg={trainerThisIsEngineering}
                     nickName="Trainer Job"
                     Fullname="Thanapob SingHaseanee"
                   />

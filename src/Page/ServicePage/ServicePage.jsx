@@ -4,6 +4,11 @@ import NavComponent from "../../Component/NavComponent/NavComponent";
 import ServiceProgramEvenRowComponent from "../../Component/ServiceProgramEvenRowComponent/ServiceProgramEvenRowComponent";
 import ServiceProgramOddRowComponent from "../../Component/ServiceProgramOddRowComponent/ServiceProgramOddRowComponent";
 import "./ServicePage.css";
+import serviceImg1 from "../../PIC/Course/pexels-jacoby-clarke-1933524.jpg";
+import serviceImg2 from "../../PIC/Course/pexels-leon-ardho-1552248.jpg";
+import serviceImg3 from "../../PIC/Course/pexels-cesar-galeão-3289711.jpg";
+import h_Logo from "../../PIC/LOGO/h.png";
+import healthyAtHomeLogo from "../../PIC/LOGO/He__2_-removebg-preview.png";
 
 function ServicePage() {
   return (
@@ -15,7 +20,7 @@ function ServicePage() {
           <div className="container">
             <div className="odd-section-of-secvice-card">
               <ServiceProgramOddRowComponent
-                imgPath="../PIC/Course/pexels-jacoby-clarke-1933524.jpg"
+                imgPath={serviceImg1}
                 courseName="45 Days Program"
                 content="Suitable for people who want to change their shape in a short time."
                 Price="15,000"
@@ -23,7 +28,7 @@ function ServicePage() {
             </div>
             <div className="even-section-of-secvice-card">
               <ServiceProgramEvenRowComponent
-                imgPath="../PIC/Course/pexels-leon-ardho-1552248.jpg"
+                imgPath={serviceImg2}
                 courseName="3 Month Program"
                 content="Suitable for those who want to change their shape sustainably and want to have knowledge on continuous health care."
                 Price="30,000"
@@ -31,7 +36,7 @@ function ServicePage() {
             </div>
             <div className="odd-section-of-secvice-card">
               <ServiceProgramOddRowComponent
-                imgPath="../PIC/Course/pexels-cesar-galeão-3289711.jpg"
+                imgPath={serviceImg3}
                 courseName="6 Month Program"
                 content="Suitable for those who want to lose fat in large amounts and sustainably."
                 Price="60,000"
@@ -41,10 +46,10 @@ function ServicePage() {
         </section>
         <section className="form-consultant">
           <div className="container">
-              <h1>Still can't decide?</h1>
+            <h1>Still can't decide?</h1>
             <div className="form-to-decide">
-              <img src="./PIC/LOGO/h.png" alt="H-LOGO" />
-              <img src="./PIC\LOGO\He__2_-removebg-preview.png" alt="H-LOGO" />
+              <img src={h_Logo} alt="H-LOGO" />
+              <img src={healthyAtHomeLogo} alt="Text-LOGO" />
               <h1>Come and consult with our trainers first.</h1>
               <form action="#">
                 <div className="fullname-form-consultant">

@@ -6,6 +6,7 @@ import NavComponent from "../../Component/NavComponent/NavComponent";
 import "./UserFoodSchedulePage.css";
 import UserConsultTrainerComponent from "../../Component/UserConsultTrainerComponent/UserConsultTrainerComponent";
 import { Link } from "react-router-dom";
+import trainerThisIsEngineering from "../../PIC/Trainer/pexels-thisisengineering-3912944.jpg";
 
 function UserFoodSchedulePage() {
   return (
@@ -20,7 +21,9 @@ function UserFoodSchedulePage() {
                 <MenuBarComponent Page="UserFoodSchedulePage" />
               </div>
               <div className="food-content">
-                <h1 id='head-of-bax-in-main-food-page'>WHAT IS NORMAL PRE PERI POST SNACK ?</h1>
+                <h1 id="head-of-bax-in-main-food-page">
+                  WHAT IS NORMAL PRE PERI POST SNACK ?
+                </h1>
                 <div className="content-card">
                   <ul>
                     <li>PRE is a pre-workout meal.</li>
@@ -35,7 +38,7 @@ function UserFoodSchedulePage() {
                 <div className="consult-trainer">
                   <Link to="/chatpage">
                     <UserConsultTrainerComponent
-                      pathOfImg="../PIC/Trainer/pexels-thisisengineering-3912944.jpg"
+                      pathOfImg={trainerThisIsEngineering}
                       nickName="Trainer Job"
                       Fullname="Thanapob SingHaseanee"
                     />

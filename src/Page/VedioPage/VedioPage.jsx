@@ -4,6 +4,10 @@ import NavComponent from "../../Component/NavComponent/NavComponent";
 import "./VedioPage.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import rewind_button from "../../PIC/Icon/rewind-button.png";
+import play_button from "../../PIC/Icon/play-button.png";
+import pause_button from "../../PIC/Icon/pause-button.png";
+import forward_button from "../../PIC/Icon/forward-button.png";
 
 function VedioPage() {
   const [onPlayOrPause, setonPlayOrPause] = useState("play");
@@ -32,22 +36,22 @@ function VedioPage() {
                 ></iframe>
                 <div className="button-play-pause">
                   <button>
-                    <img src="./PIC/Icon/rewind-button.png" alt="rewind" />
+                    <img src={rewind_button} alt="rewind" />
                   </button>
                   <button
                     onClick={() => togglePlayPause()}
                     style={{ display: onPlayOrPause === "play" ? "" : "none" }}
                   >
-                    <img src="./PIC/Icon/play-button.png" alt="Play" />
+                    <img src={play_button} alt="Play" />
                   </button>
                   <button
                     onClick={() => togglePlayPause()}
                     style={{ display: onPlayOrPause === "pause" ? "" : "none" }}
                   >
-                    <img src="./PIC/Icon/pause-button.png" alt="Pause" />
+                    <img src={pause_button} alt="Pause" />
                   </button>
                   <button>
-                    <img src="./PIC/Icon/forward-button.png" alt="forward" />
+                    <img src={forward_button} alt="forward" />
                   </button>
                 </div>
               </div>

@@ -5,6 +5,12 @@ import FooterComponent from "../../Component/FooterComponent/FooterComponent";
 import "./HomePage.css";
 import TrainerCardComponent from "../../Component/TrainerCardComponent/TrainerCardComponent";
 import ContactUsComponent from "../../Component/ContactUsComponent/ContactUsComponent";
+import trainerAndrewDick from "../../PIC/Trainer/pexels-andrew-dick-733500.jpg";
+import trainerThisIsEngineering from "../../PIC/Trainer/pexels-thisisengineering-3912944.jpg";
+import rightArrow from "../../PIC/Icon/right-arrow.png";
+import leftArrow from "../../PIC/Icon/left-arrow.png";
+import result1 from "../../PIC/Picxel/PIC_Result/pexels-karolina-grabowska-4498516.jpg";
+import promotionImg1 from "../../PIC/Picxel/PIC_Promo/pexels-william-choquette-1954524.jpg";
 
 function HomePage() {
   return (
@@ -15,17 +21,13 @@ function HomePage() {
         <section className="promotion">
           <div className="container">
             <img
-              src="./PIC/Icon/left-arrow.png"
+              src={leftArrow}
               alt="left-arrow"
               className="arrow arrow-left"
             />
+            <img src={promotionImg1} alt="run-promo" className="img-promo" />
             <img
-              src="./PIC\Picxel\PIC_Promo\pexels-william-choquette-1954524.jpg"
-              alt="run-promo"
-              className="img-promo"
-            />
-            <img
-              src="./PIC/Icon/right-arrow.png"
+              src={rightArrow}
               alt="right-arrow"
               className="arrow arrow-right"
             />
@@ -37,21 +39,9 @@ function HomePage() {
               <h1>Result</h1>
             </div>
             <div className="result-img">
-              <img
-                src="./PIC/Icon/left-arrow.png"
-                alt="left-arrow"
-                className="arrowResult"
-              />
-              <img
-                src="./PIC/Picxel/PIC_Result/pexels-karolina-grabowska-4498516.jpg"
-                alt="result1"
-                className="resultImage"
-              />
-              <img
-                src="./PIC/Icon/right-arrow.png"
-                alt="right-arrow"
-                className="arrowResult"
-              />
+              <img src={leftArrow} alt="left-arrow" className="arrowResult" />
+              <img src={result1} alt="result1" className="resultImage" />
+              <img src={rightArrow} alt="right-arrow" className="arrowResult" />
             </div>
           </div>
         </section>
@@ -66,12 +56,12 @@ function HomePage() {
             >
               <div className="trainer-card-row">
                 <TrainerCardComponent
-                  pathOfImg="./PIC/Trainer/pexels-andrew-dick-733500.jpg"
+                  pathOfImg={trainerAndrewDick}
                   nickName="Trainer Ball"
                   Fullname="Suthep Prabkeaw"
                 />
                 <TrainerCardComponent
-                  pathOfImg="./PIC/Trainer/pexels-thisisengineering-3912944.jpg"
+                  pathOfImg={trainerThisIsEngineering}
                   nickName="Trainer Job"
                   Fullname="Thanapob SingHaseanee"
                 />

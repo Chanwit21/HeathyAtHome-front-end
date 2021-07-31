@@ -29,7 +29,7 @@
 }
 
 .nav-bar-left-for-user-component .link-to-anatherpage-function a {
-    display: block;
+  display: block;
   font-weight: 600;
   font-size: 1.6vw;
   color: rgba(0, 0, 0, 0.5);
@@ -44,17 +44,19 @@
 
 /* Button TO Log Out */
 .nav-bar-left-for-user-component .link-to-anatherpage-function button {
-    width: 100%;
-    height: 3vw;
-    background-color: #ffffff;
-    border: none;
-    font-weight: 600;
-    font-size: 1.6vw;
-    color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 3vw;
+  background-color: #ffffff;
+  border: none;
+  font-weight: 600;
+  font-size: 1.6vw;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .nav-bar-left-for-user-component .link-to-anatherpage-function button:hover {
-    cursor: pointer;
+  cursor: pointer;
+  background-color: #ff88a4;
+  color: #000000ff;
 }
 
 /* .nav-bar-left-for-user-component .link-to-anatherpage-function button:hover {
@@ -69,6 +71,6 @@
 
 /* Selecor For the currently on page*/
 .onPage {
-    background: rgba(97, 209, 150, 0.5);
-    color: #000000FF;
+  background: rgba(97, 209, 150, 0.5);
+  color: #000000ff;
 }

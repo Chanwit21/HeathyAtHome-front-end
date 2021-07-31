@@ -4,8 +4,10 @@ import FooterComponent from "../../Component/FooterComponent/FooterComponent";
 import MenuBarComponent from "../../Component/MenuBarComponent/MenuBarComponent";
 import NavComponent from "../../Component/NavComponent/NavComponent";
 import UserConsultTrainerComponent from "../../Component/UserConsultTrainerComponent/UserConsultTrainerComponent";
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 import "./UserFoodSchedulePagePostWorkout.css";
+import trainerThisIsEngineering from "../../PIC/Trainer/pexels-thisisengineering-3912944.jpg";
+import postWorkoutImg from "../../PIC/FoodTable/POST-WORKOUT-MEAL.jpg";
 
 function UserFoodSchedulePagePostWorkout() {
   return (
@@ -27,10 +29,11 @@ function UserFoodSchedulePagePostWorkout() {
                   <h1>POST WORKOUT MEAL</h1>
                   <p>Meal after exercise 30-60 minutes.</p>
                   <ul>
+                    <li>The most important meal of the day</li>
                     <li>
-                    The most important meal of the day
+                      Emphasize powder X2 to give strength to TRAIN the next
+                      day.
                     </li>
-                    <li>Emphasize powder X2 to give strength to TRAIN the next day.</li>
                     <li>Focus on protein to repair and strengthen muscles.</li>
                   </ul>
                 </div>
@@ -41,10 +44,7 @@ function UserFoodSchedulePagePostWorkout() {
         <section className="img-table">
           <div className="container">
             <div className="imgtable-row">
-              <img
-                src="../../../PIC/FoodTable/POST-WORKOUT-MEAL.jpg"
-                alt="POST-WORKOUT-MEAL"
-              />
+              <img src={postWorkoutImg} alt="POST-WORKOUT-MEAL" />
             </div>
           </div>
         </section>
@@ -54,7 +54,7 @@ function UserFoodSchedulePagePostWorkout() {
               <div className="consult-trainer">
                 <Link to="/chatpage">
                   <UserConsultTrainerComponent
-                    pathOfImg="../PIC/Trainer/pexels-thisisengineering-3912944.jpg"
+                    pathOfImg={trainerThisIsEngineering}
                     nickName="Trainer Job"
                     Fullname="Thanapob SingHaseanee"
                   />

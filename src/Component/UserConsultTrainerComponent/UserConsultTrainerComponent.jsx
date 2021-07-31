@@ -1,6 +1,7 @@
 import React from "react";
 import "./UserConsultTrainerComponent.css";
 import TrainerCardMiniSizeComponent from "../TrainerCardMiniSizeComponent/TrainerCardMiniSizeComponent";
+import shareIcon from "../../PIC/Icon/share.png";
 
 function ConsultTrainerComponent(props) {
   return (
@@ -13,7 +14,7 @@ function ConsultTrainerComponent(props) {
           <p>You can consult him whenever you want.</p>
         </div>
       </div>
-      <img src="../PIC/Icon/share.png" alt="share" />
+      <img src={shareIcon} alt="share" />
       <TrainerCardMiniSizeComponent
         pathOfImg={props.pathOfImg}
         nickName={props.nickName}

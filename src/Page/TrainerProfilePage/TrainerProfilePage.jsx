@@ -3,13 +3,15 @@ import FooterComponent from "../../Component/FooterComponent/FooterComponent";
 import NavBarLeftForAdminAndTrainerComponent from "../../Component/NavBarLeftForAdminAndTrainerComponent/NavBarLeftForAdminAndTrainerComponent";
 import NavComponent from "../../Component/NavComponent/NavComponent";
 import "./TrainerProfilePage.css";
+import avatarImg from "../../PIC/Icon/user.png";
+import trainerThisIsEngineering from "../../PIC/Trainer/pexels-thisisengineering-3912944.jpg";
 
 function TrainerProfilePage() {
   const arrayProfileContents = [
     {
       name: "Chanwit Pansila",
       status: "Admin",
-      imgPath: "./PIC/Icon/user.png",
+      imgPath: avatarImg,
       imgPosition: "0 0",
       contents: [
         { "col-left": "Phone Number", "col-right": "089-697-xxx" },
@@ -30,7 +32,7 @@ function TrainerProfilePage() {
     {
       name: "Thanapob SingHaseanee",
       status: "Trainer",
-      imgPath: "./PIC/Trainer/pexels-thisisengineering-3912944.jpg",
+      imgPath: trainerThisIsEngineering,
       imgPosition: "0 0",
       contents: [
         { "col-left": "Phone Number", "col-right": "089-697-xxx" },
@@ -48,13 +50,14 @@ function TrainerProfilePage() {
         },
         {
           "col-left": "Education",
-          "col-right": "Faculty of Physical Education Srinakharinwirot university.",
+          "col-right":
+            "Faculty of Physical Education Srinakharinwirot university.",
         },
       ],
     },
   ];
   const arrayFilter = arrayProfileContents.filter(
-    (item) => item.name === "Thanapob SingHaseanee"
+    item => item.name === "Thanapob SingHaseanee"
   );
 
   return (
@@ -83,7 +86,7 @@ function TrainerProfilePage() {
                     <p>{arrayFilter[0].name}</p>
                   </div>
                 </div>
-                {arrayFilter[0].contents.map((item) => {
+                {arrayFilter[0].contents.map(item => {
                   return (
                     <div className="row-of-profile-content">
                       <div className="content-profile-content-left">
